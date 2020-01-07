@@ -1,6 +1,10 @@
 import React from "react";
 
-const EditHero: React.FC = () => {
+interface IProps {
+
+}
+
+const EditHero: React.FC<IProps> = () => {
     return <h1>EditHero Works!</h1>
 };
 

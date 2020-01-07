@@ -6,7 +6,11 @@ import {IApplicationState} from "../../store";
 import Button from 'react-bootstrap/Button';
 import HeroForm from "../components/HeroForm";
 
-const Heroes: React.FC = () => {
+interface IProps {
+
+}
+
+const Heroes: React.FC<IProps> = () => {
     const dispatch: Dispatch = useDispatch();
     const {heroes, isLoading} = useSelector((state: IApplicationState) => state.heroReducer);
 

@@ -2,14 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ed4cb247-8ac5-44a5-8dc5-3c3bca58f244" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/villains/pages/Villains.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db.json" beforeDir="false" afterPath="$PROJECT_DIR$/db.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Router.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Router.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/heroes/components/HeroForm.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/heroes/components/HeroForm.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/heroes/pages/EditHero.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/heroes/pages/EditHero.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/heroes/pages/Heroes.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/heroes/pages/Heroes.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/villains/pages/Villains.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/villains/pages/Villains.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -86,7 +82,7 @@
       <option name="presentableId" value="Default" />
       <updated>1578397855061</updated>
       <workItem from="1578397863163" duration="13000" />
-      <workItem from="1578397891641" duration="15067000" />
+      <workItem from="1578397891641" duration="15386000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1578413672560</created>
@@ -95,7 +91,14 @@
       <option name="project" value="LOCAL" />
       <updated>1578413672560</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="added a page">
+      <created>1578414396761</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1578414396761</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -103,17 +106,18 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="initial commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="initial commit" />
+    <MESSAGE value="added a page" />
+    <option name="LAST_COMMIT_MESSAGE" value="added a page" />
   </component>
   <component name="WindowStateProjectService">
     <state x="-3067" y="275" key="#Notifications" timestamp="1578399591924">
       <screen x="-3840" y="0" width="2560" height="1400" />
     </state>
     <state x="-3067" y="275" key="#Notifications/0.0.1536.824/-3840.0.2560.1400/-7680.0.2560.1400@-3840.0.2560.1400" timestamp="1578399591924" />
-    <state x="-3055" y="112" key="CommitChangelistDialog2" timestamp="1578413671869">
+    <state x="-3055" y="112" key="CommitChangelistDialog2" timestamp="1578414396045">
       <screen x="-3840" y="0" width="2560" height="1400" />
     </state>
-    <state x="-3055" y="112" key="CommitChangelistDialog2/0.0.1536.824/-3840.0.2560.1400/-7680.0.2560.1400@-3840.0.2560.1400" timestamp="1578413671869" />
+    <state x="-3055" y="112" key="CommitChangelistDialog2/0.0.1536.824/-3840.0.2560.1400/-7680.0.2560.1400@-3840.0.2560.1400" timestamp="1578414396045" />
     <state x="-2976" y="418" width="831" height="608" key="EditFileWatcherDialog" timestamp="1578403746415">
       <screen x="-3840" y="0" width="2560" height="1400" />
     </state>
@@ -122,6 +126,10 @@
       <screen x="-3840" y="0" width="2560" height="1400" />
     </state>
     <state x="-2830" y="397" key="FileChooserDialogImpl/0.0.1536.824/-3840.0.2560.1400/-7680.0.2560.1400@-3840.0.2560.1400" timestamp="1578403704267" />
+    <state x="-2757" y="566" key="Github.ShareDialog" timestamp="1578414490771">
+      <screen x="-3840" y="0" width="2560" height="1400" />
+    </state>
+    <state x="-2757" y="566" key="Github.ShareDialog/0.0.1536.824/-3840.0.2560.1400/-7680.0.2560.1400@-3840.0.2560.1400" timestamp="1578414490771" />
     <state x="-3174" y="257" key="SettingsEditor" timestamp="1578403749153">
       <screen x="-3840" y="0" width="2560" height="1400" />
     </state>

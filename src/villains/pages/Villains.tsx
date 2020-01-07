@@ -1,6 +1,10 @@
 import React from "react";
 
-const Villains: React.FC = () => {
+interface IProps {
+
+}
+
+const Villains: React.FC<IProps> = () => {
   return <h1>Villains Works!</h1>
 };
 
