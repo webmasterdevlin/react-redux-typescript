@@ -1,11 +1,40 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ed4cb247-8ac5-44a5-8dc5-3c3bca58f244" name="Default Changelist" comment="" />
+    <list default="true" id="ed4cb247-8ac5-44a5-8dc5-3c3bca58f244" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/watcherTasks.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/db.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Router.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/heroes/components/HeroForm.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/heroes/hero-actions.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/heroes/hero-reducer.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/heroes/hero-saga.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/heroes/hero-service.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/heroes/hero-types.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/heroes/pages/EditHero.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/heroes/pages/Heroes.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/store/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="TypeScript File" />
+        <option value="TypeScript JSX File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="JsFlowSettings">
     <service-enabled>true</service-enabled>
@@ -14,7 +43,9 @@
     <auto-save>true</auto-save>
   </component>
   <component name="ProjectId" id="1W49AJZkgQA5XDrmTRV9B1KGD87" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="autoscrollFromSource" value="true" />
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -23,6 +54,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.path.for.package.standard" value="project" />
@@ -30,7 +62,15 @@
     <property name="node.js.selected.package.standard" value="" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="yarn" />
+    <property name="prettierjs.PrettierConfiguration.Package" value="C:\Users\devduldu\Downloads\react-redux-typescript\node_modules\prettier" />
     <property name="settings.editor.selected.configurable" value="watcher.settings" />
+    <property name="ts.external.directory.path" value="C:\Users\devduldu\Downloads\react-redux-typescript\node_modules\typescript\lib" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\devduldu\Downloads\react-redux-typescript\src\heroes" />
+    </key>
   </component>
   <component name="ServiceViewManager">
     <option name="viewStates">
@@ -55,10 +95,29 @@
       <option name="presentableId" value="Default" />
       <updated>1578397855061</updated>
       <workItem from="1578397863163" duration="13000" />
+      <workItem from="1578397891641" duration="14255000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="-3067" y="275" key="#Notifications" timestamp="1578399591924">
+      <screen x="-3840" y="0" width="2560" height="1400" />
+    </state>
+    <state x="-3067" y="275" key="#Notifications/0.0.1536.824/-3840.0.2560.1400/-7680.0.2560.1400@-3840.0.2560.1400" timestamp="1578399591924" />
+    <state x="-2976" y="418" width="831" height="608" key="EditFileWatcherDialog" timestamp="1578403746415">
+      <screen x="-3840" y="0" width="2560" height="1400" />
+    </state>
+    <state x="-2976" y="418" width="831" height="608" key="EditFileWatcherDialog/0.0.1536.824/-3840.0.2560.1400/-7680.0.2560.1400@-3840.0.2560.1400" timestamp="1578403746415" />
+    <state x="-2830" y="397" key="FileChooserDialogImpl" timestamp="1578403704267">
+      <screen x="-3840" y="0" width="2560" height="1400" />
+    </state>
+    <state x="-2830" y="397" key="FileChooserDialogImpl/0.0.1536.824/-3840.0.2560.1400/-7680.0.2560.1400@-3840.0.2560.1400" timestamp="1578403704267" />
+    <state x="-3174" y="257" key="SettingsEditor" timestamp="1578403749153">
+      <screen x="-3840" y="0" width="2560" height="1400" />
+    </state>
+    <state x="-3174" y="257" key="SettingsEditor/0.0.1536.824/-3840.0.2560.1400/-7680.0.2560.1400@-3840.0.2560.1400" timestamp="1578403749153" />
   </component>
 </project>
