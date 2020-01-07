@@ -6,7 +6,7 @@ import {IApplicationState} from "../../store";
 import Button from 'react-bootstrap/Button';
 import HeroForm from "../components/HeroForm";
 
-export default function Heroes() {
+const Heroes: React.FC = () => {
     const dispatch: Dispatch = useDispatch();
     const {heroes, isLoading} = useSelector((state: IApplicationState) => state.heroReducer);
 
@@ -30,4 +30,6 @@ export default function Heroes() {
             }</ul>
         </div>
     )
-}
+};
+
+export default Heroes;

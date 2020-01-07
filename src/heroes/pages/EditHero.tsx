@@ -1,6 +1,6 @@
 import React from "react";
 
-const EditHero = () => {
+const EditHero: React.FC = () => {
     return <h1>EditHero Works!</h1>
 };
 

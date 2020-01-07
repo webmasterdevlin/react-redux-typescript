@@ -3,9 +3,10 @@ import Button from "react-bootstrap/Button";
 import { addHero } from "../hero-actions";
 import { useDispatch } from "react-redux";
 import { IHeroModel } from "../hero-types";
+import {Dispatch} from "redux";
 
-const HeroForm = () => {
-  const dispatch = useDispatch();
+const HeroForm: React.FC = () => {
+  const dispatch: Dispatch = useDispatch();
   const [newHero, setNewHero] = useState<IHeroModel>({
     firstName: "",
     lastName: "",
