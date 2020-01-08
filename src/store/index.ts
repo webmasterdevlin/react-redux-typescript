@@ -12,14 +12,18 @@ import thunk from "redux-thunk";
 
 import { heroReducer } from "../heroes/hero-reducer";
 import { IHeroState } from "../heroes/hero-types";
-import {heroSaga} from "../heroes/hero-saga";
+import { heroSaga } from "../heroes/hero-saga";
+import { villainReducer } from "./../villains/villain-reducer";
+import { IVillainState } from "./../villains/villain-types";
 
 export interface IApplicationState {
   heroReducer: IHeroState;
+  villainReducer: IVillainState;
 }
 
 const rootReducer = combineReducers<IApplicationState>({
-  heroReducer: heroReducer
+  heroReducer: heroReducer,
+  villainReducer: villainReducer
 });
 
 // @ts-ignore

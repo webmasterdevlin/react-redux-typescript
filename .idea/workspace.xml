@@ -3,9 +3,13 @@
   <component name="ChangeListManager">
     <list default="true" id="ed4cb247-8ac5-44a5-8dc5-3c3bca58f244" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/heroes/pages/EditHero.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/heroes/pages/EditHero.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/heroes/pages/Heroes.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/heroes/pages/Heroes.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.json" beforeDir="false" afterPath="$PROJECT_DIR$/db.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/heroes/hero-reducer.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/heroes/hero-reducer.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/index.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/villains/pages/Villains.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/villains/pages/Villains.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -15,8 +19,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="TypeScript File" />
         <option value="TypeScript JSX File" />
+        <option value="TypeScript File" />
       </list>
     </option>
   </component>
@@ -83,6 +87,8 @@
       <updated>1578397855061</updated>
       <workItem from="1578397863163" duration="13000" />
       <workItem from="1578397891641" duration="15386000" />
+      <workItem from="1578482171044" duration="3969000" />
+      <workItem from="1578487003912" duration="999000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1578413672560</created>
@@ -114,10 +120,10 @@
       <screen x="-3840" y="0" width="2560" height="1400" />
     </state>
     <state x="-3067" y="275" key="#Notifications/0.0.1536.824/-3840.0.2560.1400/-7680.0.2560.1400@-3840.0.2560.1400" timestamp="1578399591924" />
-    <state x="-3055" y="112" key="CommitChangelistDialog2" timestamp="1578414396045">
+    <state x="-3055" y="112" key="CommitChangelistDialog2" timestamp="1578414695776">
       <screen x="-3840" y="0" width="2560" height="1400" />
     </state>
-    <state x="-3055" y="112" key="CommitChangelistDialog2/0.0.1536.824/-3840.0.2560.1400/-7680.0.2560.1400@-3840.0.2560.1400" timestamp="1578414396045" />
+    <state x="-3055" y="112" key="CommitChangelistDialog2/0.0.1536.824/-3840.0.2560.1400/-7680.0.2560.1400@-3840.0.2560.1400" timestamp="1578414695776" />
     <state x="-2976" y="418" width="831" height="608" key="EditFileWatcherDialog" timestamp="1578403746415">
       <screen x="-3840" y="0" width="2560" height="1400" />
     </state>
@@ -134,5 +140,13 @@
       <screen x="-3840" y="0" width="2560" height="1400" />
     </state>
     <state x="-3174" y="257" key="SettingsEditor/0.0.1536.824/-3840.0.2560.1400/-7680.0.2560.1400@-3840.0.2560.1400" timestamp="1578403749153" />
+    <state x="-3067" y="363" key="Vcs.Push.Dialog.v2" timestamp="1578414698580">
+      <screen x="-3840" y="0" width="2560" height="1400" />
+    </state>
+    <state x="-3067" y="363" key="Vcs.Push.Dialog.v2/0.0.1536.824/-3840.0.2560.1400/-7680.0.2560.1400@-3840.0.2560.1400" timestamp="1578414698580" />
+    <state x="-2981" y="312" width="840" height="1034" key="search.everywhere.popup" timestamp="1578484608665">
+      <screen x="-3840" y="0" width="2560" height="1400" />
+    </state>
+    <state x="-2981" y="312" width="840" height="1034" key="search.everywhere.popup/0.0.1536.824/-3840.0.2560.1400/-7680.0.2560.1400@-3840.0.2560.1400" timestamp="1578484608665" />
   </component>
 </project>
