@@ -1,6 +1,6 @@
 import React from "react";
 
-interface IProps {}
+type IProps = {}
 
 const EditVillain: React.FC<IProps> = () => {
   return <h1>EditVillain Works!</h1>;

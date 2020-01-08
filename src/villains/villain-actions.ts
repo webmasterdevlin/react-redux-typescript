@@ -53,7 +53,7 @@ export const addVillain: ActionCreator<any> = (villain: IVillainModel) => {
 
     try {
       const { data } = await postVillain(villain);
-      dispatch({ type: VillainActionTypes.ADD_VILLAIN_SUCCESS });
+      dispatch({ type: VillainActionTypes.ADD_VILLAIN_SUCCESS, payload: data });
     } catch (e) {
       dispatch({
         type: VillainActionTypes.ADD_VILLAIN_FAIL,
