@@ -6,17 +6,17 @@ const api = axios.create({
 });
 
 export async function getVillains() {
-    return await api.get( 'villains');
+    return await api.get<IVillainModel[]>( 'villains');
 }
 
 export async function deleteVillain(id: string) {
-    return await api.delete('villains/' + id );
+    return await api.delete<void>('villains/' + id );
 }
 
 export async function postVillain(newVillain: IVillainModel) {
-    return await api.post('villains', newVillain);
+    return await api.post<IVillainModel>('villains', newVillain);
 }
 
 export async function putVillain(updateVillain: IVillainModel) {
-    return await api.put('villains', updateVillain);
+    return await api.put<void>('villains', updateVillain);
 }
