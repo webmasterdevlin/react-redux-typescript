@@ -5,6 +5,10 @@ import { useDispatch } from "react-redux";
 import { IVillainModel } from "../villain-types";
 import {Dispatch} from "redux";
 
+/*
+ * Without Formik
+ * Go to HeroForm to see Formik implementation
+ * */
 const VillainForm: React.FC = () => {
     const dispatch: Dispatch = useDispatch();
     const [newVillain, setNewVillain] = useState<IVillainModel>({

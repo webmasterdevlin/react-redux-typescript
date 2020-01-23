@@ -4,9 +4,13 @@ import { addHero } from "../hero-actions";
 import { useDispatch } from "react-redux";
 import { IHeroModel } from "../hero-types";
 import {Dispatch} from "redux";
+import {Formik, Form, Field, ErrorMessage, useField} from "formik";
+import * as Yup from "yup";
 
+/* Using Formik */
 const HeroForm: React.FC = () => {
   const dispatch: Dispatch = useDispatch();
+
   const [newHero, setNewHero] = useState<IHeroModel>({
     firstName: "",
     lastName: "",
@@ -14,58 +18,50 @@ const HeroForm: React.FC = () => {
     knownAs: ""
   } as IHeroModel);
 
-  const handleInputChange = (event: React.FormEvent<HTMLInputElement>) => {
-    const heroFromForm = { ...newHero };
-    const { id, value } = event.currentTarget;
-    heroFromForm[id] = value;
-    setNewHero(heroFromForm);
-  };
-
-  const handleSubmit = (event: React.SyntheticEvent) => {
-    event.preventDefault();
-    dispatch(addHero(newHero));
-
-    let emptyHeroForm: any = {};
-    Object.keys(newHero).forEach(key => {
-      emptyHeroForm[key] = "";
-    });
-
-    setNewHero(emptyHeroForm);
-  };
-
   return (
-    <div>
-      <form onSubmit={handleSubmit}>
-        <input
-          placeholder={"First Name"}
-          id="firstName"
-          onChange={handleInputChange}
-          value={newHero.firstName}
-        />
-        <input
-          placeholder={"Last Name"}
-          id="lastName"
-          onChange={handleInputChange}
-          value={newHero.lastName}
-        />
-        <input
-          placeholder={"House"}
-          id="house"
-          onChange={handleInputChange}
-          value={newHero.house}
-        />
-        <input
-          placeholder={"Known As"}
-          id="knownAs"
-          onChange={handleInputChange}
-          value={newHero.knownAs}
-        />
-        <Button type="submit" variant="primary">
-          Send
-        </Button>
-      </form>
-    </div>
+      <Formik
+          initialValues={newHero}
+          validationSchema={Yup.object({
+              firstName: Yup.string().required('required'),
+              lastName: Yup.string().required('required'),
+              house: Yup.string().required('required'),
+              knownAs: Yup.string().required('required'),
+          })}
+          onSubmit={(values, actions) => {
+              dispatch(addHero(values));
+              actions.resetForm();
+          }}
+      >
+        {formikProps => (
+            <Form>
+                <Field name={'firstName'} />
+                <ErrorMessage name="firstName" component="div" />
+                <Field name={'lastName'}   />
+                <ErrorMessage name="lastName" component="div" />
+                <Field name={'house'} />
+                <ErrorMessage name="house" component="div" />
+                <Field name={'knownAs'} />
+                <ErrorMessage name="knownAs" component="div" />
+                <Button type="submit" >
+                    Send
+                </Button>
+            </Form>
+        )}
+      </Formik>
   );
 };
 
 export default HeroForm;
+
+/* abstraction of the repeated Field and ErrorMessage above */
+const CustomField = ({...props }: any) => {
+    const [field, meta] = useField(props);
+    return (
+        <>
+            <input className="text-input" {...field} {...props} />
+            {meta.touched && meta.error ? (
+                <div className="error">{meta.error}</div>
+            ) : null}
+        </>
+    );
+};
