@@ -18,15 +18,17 @@ const HeroForm: React.FC = () => {
     knownAs: ""
   } as IHeroModel);
 
+  const validationSchema = Yup.object({
+      firstName: Yup.string().required('required'),
+      lastName: Yup.string().required('required'),
+      house: Yup.string().required('required'),
+      knownAs: Yup.string().required('required'),
+  });
+
   return (
       <Formik
           initialValues={newHero}
-          validationSchema={Yup.object({
-              firstName: Yup.string().required('required'),
-              lastName: Yup.string().required('required'),
-              house: Yup.string().required('required'),
-              knownAs: Yup.string().required('required'),
-          })}
+          validationSchema={validationSchema}
           onSubmit={(values, actions) => {
               dispatch(addHero(values));
               actions.resetForm();
