@@ -1,9 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ed4cb247-8ac5-44a5-8dc5-3c3bca58f244" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/heroes/components/HeroForm.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/heroes/components/HeroForm.tsx" afterDir="false" />
+    <list default="true" id="ed4cb247-8ac5-44a5-8dc5-3c3bca58f244" name="Default Changelist" comment="refactor validationSchema">
+      <change beforePath="$PROJECT_DIR$/../.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/watcherTasks.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/watcherTasks.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/../src/App.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/heroes/components/HeroForm.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/../src/heroes/components/HeroForm.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/heroes/pages/Heroes.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/../src/heroes/pages/Heroes.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -13,19 +19,22 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="TypeScript JSX File" />
         <option value="TypeScript File" />
+        <option value="TypeScript JSX File" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="JsFlowSettings">
     <service-enabled>true</service-enabled>
     <exe-path />
     <other-services-enabled>true</other-services-enabled>
     <auto-save>true</auto-save>
+  </component>
+  <component name="PackageJsonUpdateNotifier">
+    <dismissed value="$PROJECT_DIR$/../package.json" />
   </component>
   <component name="ProjectId" id="1W49AJZkgQA5XDrmTRV9B1KGD87" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -49,8 +58,8 @@
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="yarn" />
     <property name="prettierjs.PrettierConfiguration.Package" value="C:\Users\devduldu\Downloads\react-redux-typescript\node_modules\prettier" />
-    <property name="settings.editor.selected.configurable" value="JavaScript.Libraries" />
-    <property name="ts.external.directory.path" value="$PROJECT_DIR$/node_modules/typescript/lib" />
+    <property name="settings.editor.selected.configurable" value="watcher.settings" />
+    <property name="ts.external.directory.path" value="$PROJECT_DIR$/../node_modules/typescript/lib" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -90,6 +99,8 @@
       <workItem from="1579776193517" duration="7000" />
       <workItem from="1579776211634" duration="55000" />
       <workItem from="1579777703712" duration="83000" />
+      <workItem from="1585150126924" duration="1311000" />
+      <workItem from="1585151485087" duration="4500000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1578413672560</created>
@@ -137,11 +148,16 @@
       <screen x="-3840" y="0" width="2560" height="1400" />
     </state>
     <state x="-3067" y="275" key="#Notifications/0.0.1536.824/-3840.0.2560.1400/-7680.0.2560.1400@-3840.0.2560.1400" timestamp="1578399591924" />
-    <state x="-3055" y="112" key="CommitChangelistDialog2" timestamp="1579776104665">
-      <screen x="-3840" y="0" width="2560" height="1400" />
+    <state x="729" y="289" width="524" height="509" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1585154733177">
+      <screen x="72" y="27" width="1848" height="1053" />
+    </state>
+    <state x="729" y="289" width="524" height="509" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/1920.0.1920.1080/72.27.1848.1053@72.27.1848.1053" timestamp="1585154733177" />
+    <state x="639" y="79" width="1046" height="1001" key="CommitChangelistDialog2" timestamp="1585151158134">
+      <screen x="72" y="27" width="1848" height="1053" />
     </state>
     <state x="515" y="24" key="CommitChangelistDialog2/-1920.23.1920.1057/0.23.1680.982@0.23.1680.982" timestamp="1579735017001" />
     <state x="-3055" y="112" key="CommitChangelistDialog2/0.0.1536.824/-3840.0.2560.1400/-7680.0.2560.1400@-3840.0.2560.1400" timestamp="1579776104665" />
+    <state x="639" y="79" width="1046" height="1001" key="CommitChangelistDialog2/1920.0.1920.1080/72.27.1848.1053@72.27.1848.1053" timestamp="1585151158134" />
     <state x="-2976" y="418" width="831" height="608" key="EditFileWatcherDialog" timestamp="1578403746415">
       <screen x="-3840" y="0" width="2560" height="1400" />
     </state>
@@ -154,15 +170,17 @@
       <screen x="-3840" y="0" width="2560" height="1400" />
     </state>
     <state x="-2757" y="566" key="Github.ShareDialog/0.0.1536.824/-3840.0.2560.1400/-7680.0.2560.1400@-3840.0.2560.1400" timestamp="1578414490771" />
-    <state x="-2845" y="239" key="RollbackChangesDialog" timestamp="1579775931576">
-      <screen x="-3840" y="0" width="2560" height="1400" />
+    <state x="790" y="207" width="692" height="751" key="RollbackChangesDialog" timestamp="1585151154949">
+      <screen x="72" y="27" width="1848" height="1053" />
     </state>
     <state x="-2845" y="239" key="RollbackChangesDialog/0.0.1536.824/-3840.0.2560.1400/-7680.0.2560.1400@-3840.0.2560.1400" timestamp="1579775931576" />
-    <state x="437" y="203" key="SettingsEditor" timestamp="1579730169057">
-      <screen x="0" y="23" width="1680" height="982" />
+    <state x="790" y="207" width="692" height="751" key="RollbackChangesDialog/1920.0.1920.1080/72.27.1848.1053@72.27.1848.1053" timestamp="1585151154949" />
+    <state x="553" y="220" width="1022" height="737" key="SettingsEditor" timestamp="1585154489560">
+      <screen x="72" y="27" width="1848" height="1053" />
     </state>
     <state x="437" y="203" key="SettingsEditor/-1920.23.1920.1057/0.23.1680.982@0.23.1680.982" timestamp="1579730169057" />
     <state x="-3174" y="257" key="SettingsEditor/0.0.1536.824/-3840.0.2560.1400/-7680.0.2560.1400@-3840.0.2560.1400" timestamp="1578403749153" />
+    <state x="553" y="220" width="1022" height="737" key="SettingsEditor/1920.0.1920.1080/72.27.1848.1053@72.27.1848.1053" timestamp="1585154489560" />
     <state x="-3067" y="363" key="Vcs.Push.Dialog.v2" timestamp="1579776106952">
       <screen x="-3840" y="0" width="2560" height="1400" />
     </state>

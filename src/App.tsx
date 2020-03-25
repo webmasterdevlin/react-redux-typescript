@@ -29,7 +29,9 @@ const App: React.FC = () => {
               </Nav.Link>
             </Nav>
           </Navbar>
-          <Router />
+         <div className={'container'}>
+           <Router />
+         </div>
         </>
       </BrowserRouter>
     </Provider>
