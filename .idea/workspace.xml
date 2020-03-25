@@ -2,7 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ed4cb247-8ac5-44a5-8dc5-3c3bca58f244" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/heroes/components/HeroForm.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/heroes/components/HeroForm.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,16 +21,13 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="JsFlowSettings">
     <service-enabled>true</service-enabled>
     <exe-path />
     <other-services-enabled>true</other-services-enabled>
     <auto-save>true</auto-save>
-  </component>
-  <component name="PackageJsonUpdateNotifier">
-    <dismissed value="$PROJECT_DIR$/../package.json" />
   </component>
   <component name="ProjectId" id="1W49AJZkgQA5XDrmTRV9B1KGD87" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -54,8 +54,8 @@
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="yarn" />
     <property name="prettierjs.PrettierConfiguration.Package" value="C:\Users\devduldu\Downloads\react-redux-typescript\node_modules\prettier" />
-    <property name="settings.editor.selected.configurable" value="settings.javascript.linters.tslint" />
-    <property name="ts.external.directory.path" value="$PROJECT_DIR$/../node_modules/typescript/lib" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+    <property name="ts.external.directory.path" value="$PROJECT_DIR$/node_modules/typescript/lib" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -98,6 +98,8 @@
       <workItem from="1585150126924" duration="1311000" />
       <workItem from="1585151485087" duration="4792000" />
       <workItem from="1585162951776" duration="1214000" />
+      <workItem from="1585172012992" duration="20000" />
+      <workItem from="1585172035372" duration="6000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1578413672560</created>
@@ -175,14 +177,31 @@
       <screen x="-3840" y="0" width="2560" height="1400" />
     </state>
     <state x="-2757" y="566" key="Github.ShareDialog/0.0.1536.824/-3840.0.2560.1400/-7680.0.2560.1400@-3840.0.2560.1400" timestamp="1578414490771" />
+    <state width="1625" height="220" key="GridCell.Tab.0.bottom" timestamp="1585171052103">
+      <screen x="-1920" y="23" width="1920" height="1057" />
+    </state>
+    <state width="1625" height="220" key="GridCell.Tab.0.bottom/-1920.23.1920.1057/0.23.1680.982@-1920.23.1920.1057" timestamp="1585171052103" />
+    <state width="1625" height="220" key="GridCell.Tab.0.center" timestamp="1585171052103">
+      <screen x="-1920" y="23" width="1920" height="1057" />
+    </state>
+    <state width="1625" height="220" key="GridCell.Tab.0.center/-1920.23.1920.1057/0.23.1680.982@-1920.23.1920.1057" timestamp="1585171052103" />
+    <state width="1625" height="220" key="GridCell.Tab.0.left" timestamp="1585171052102">
+      <screen x="-1920" y="23" width="1920" height="1057" />
+    </state>
+    <state width="1625" height="220" key="GridCell.Tab.0.left/-1920.23.1920.1057/0.23.1680.982@-1920.23.1920.1057" timestamp="1585171052102" />
+    <state width="1625" height="220" key="GridCell.Tab.0.right" timestamp="1585171052103">
+      <screen x="-1920" y="23" width="1920" height="1057" />
+    </state>
+    <state width="1625" height="220" key="GridCell.Tab.0.right/-1920.23.1920.1057/0.23.1680.982@-1920.23.1920.1057" timestamp="1585171052103" />
     <state x="790" y="207" width="692" height="751" key="RollbackChangesDialog" timestamp="1585151154949">
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
     <state x="-2845" y="239" key="RollbackChangesDialog/0.0.1536.824/-3840.0.2560.1400/-7680.0.2560.1400@-3840.0.2560.1400" timestamp="1579775931576" />
     <state x="790" y="207" width="692" height="751" key="RollbackChangesDialog/1920.0.1920.1080/72.27.1848.1053@72.27.1848.1053" timestamp="1585151154949" />
-    <state x="553" y="220" width="1022" height="737" key="SettingsEditor" timestamp="1585156276449">
-      <screen x="72" y="27" width="1848" height="1053" />
+    <state x="202" y="85" width="1125" height="897" key="SettingsEditor" timestamp="1585172026797">
+      <screen x="0" y="23" width="1680" height="982" />
     </state>
+    <state x="202" y="85" width="1125" height="897" key="SettingsEditor/-1920.23.1920.1057/0.23.1680.982@-1920.23.1920.1057" timestamp="1585172026797" />
     <state x="437" y="203" key="SettingsEditor/-1920.23.1920.1057/0.23.1680.982@0.23.1680.982" timestamp="1579730169057" />
     <state x="-3174" y="257" key="SettingsEditor/0.0.1536.824/-3840.0.2560.1400/-7680.0.2560.1400@-3840.0.2560.1400" timestamp="1578403749153" />
     <state x="553" y="220" width="1022" height="737" key="SettingsEditor/1920.0.1920.1080/72.27.1848.1053@72.27.1848.1053" timestamp="1585156276449" />
