@@ -22,12 +22,17 @@ const Villains: React.FC<IProps> = () => {
     <div>
       <h1>Super Villains</h1>
       <VillainForm />
-      <ul>
+      <ul className={"mt-5 list-group"}>
         {isLoading ? (
           <h2>Loading.. Please wait..</h2>
         ) : (
-          villains.map(v => (
-            <li key={v.id}>
+          villains.map((v) => (
+            <li
+              key={v.id}
+              className={
+                "list-group-item col-12 d-flex justify-content-between"
+              }
+            >
               {`${v.firstName} ${v.lastName} is ${v.knownAs}`}
               <Button
                 onClick={() => dispatch(removeVillain(v.id))}
