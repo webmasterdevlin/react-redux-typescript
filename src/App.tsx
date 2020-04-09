@@ -15,10 +15,7 @@ const App: React.FC = () => {
           <Navbar bg="dark" expand="lg">
             <Nav className="mr-auto">
               <Nav.Link>
-                <Link
-                  className={navStyle}
-                  to={"heroes"}
-                >
+                <Link className={navStyle} to={"heroes"}>
                   Heroes
                 </Link>
               </Nav.Link>
@@ -29,9 +26,9 @@ const App: React.FC = () => {
               </Nav.Link>
             </Nav>
           </Navbar>
-         <div className={'container'}>
-           <Router />
-         </div>
+          <div className={"container"}>
+            <Router />
+          </div>
         </>
       </BrowserRouter>
     </Provider>
