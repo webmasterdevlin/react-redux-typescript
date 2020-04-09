@@ -5,11 +5,10 @@ import { useDispatch } from "react-redux";
 import { IVillainModel } from "../villain-types";
 import { Dispatch } from "redux";
 import * as Yup from "yup";
+import { ErrorMessage, Form, Formik } from "formik";
+import Card from "react-bootstrap/Card";
+import FormB from "react-bootstrap/Form";
 
-/*
- * Without Formik
- * Go to HeroForm to see Formik implementation
- * */
 const VillainForm: React.FC = () => {
   const dispatch: Dispatch = useDispatch();
   const [newVillain, setNewVillain] = useState<IVillainModel>({
@@ -26,57 +25,84 @@ const VillainForm: React.FC = () => {
     knownAs: Yup.string().required("required"),
   });
 
-  const handleInputChange = (event: React.FormEvent<HTMLInputElement>) => {
-    const VillainFromForm = { ...newVillain };
-    const { id, value } = event.currentTarget;
-    VillainFromForm[id] = value;
-    setNewVillain(VillainFromForm);
-  };
-
-  const handleSubmit = (event: React.SyntheticEvent) => {
-    event.preventDefault();
-    dispatch(addVillain(newVillain));
-
-    let emptyVillainForm: any = {};
-    Object.keys(newVillain).forEach((key) => {
-      emptyVillainForm[key] = "";
-    });
-
-    setNewVillain(emptyVillainForm);
-  };
-
   return (
-    <div>
-      <form onSubmit={handleSubmit}>
-        <input
-          placeholder={"First Name"}
-          id="firstName"
-          onChange={handleInputChange}
-          value={newVillain.firstName}
-        />
-        <input
-          placeholder={"Last Name"}
-          id="lastName"
-          onChange={handleInputChange}
-          value={newVillain.lastName}
-        />
-        <input
-          placeholder={"House"}
-          id="house"
-          onChange={handleInputChange}
-          value={newVillain.house}
-        />
-        <input
-          placeholder={"Known As"}
-          id="knownAs"
-          onChange={handleInputChange}
-          value={newVillain.knownAs}
-        />
-        <Button type="submit" variant="primary">
-          Send
-        </Button>
-      </form>
-    </div>
+    <Formik
+      initialValues={newVillain}
+      validationSchema={validationSchema}
+      onSubmit={(values, actions) => {
+        dispatch(addVillain(values));
+        actions.resetForm();
+      }}
+    >
+      {(formikProps) => (
+        <Card bg={"light"}>
+          <Card.Body>
+            <Form>
+              <FormB.Group>
+                <FormB.Label>First Name</FormB.Label>
+                <FormB.Control
+                  onChange={formikProps.handleChange("firstName")}
+                  onBlur={formikProps.handleBlur("firstName")}
+                  value={formikProps.values.firstName}
+                  autoComplete={"off"}
+                />
+                <ErrorMessage
+                  name="firstName"
+                  component="div"
+                  className={"mt-2 alert alert-danger"}
+                />
+              </FormB.Group>
+
+              <FormB.Group>
+                <FormB.Label>Last Name</FormB.Label>
+                <FormB.Control
+                  onChange={formikProps.handleChange("lastName")}
+                  onBlur={formikProps.handleBlur("lastName")}
+                  value={formikProps.values.lastName}
+                  autoComplete={"off"}
+                />
+                <ErrorMessage
+                  name="lastName"
+                  component="div"
+                  className={"mt-2 alert alert-danger"}
+                />
+              </FormB.Group>
+
+              <FormB.Group>
+                <FormB.Label>House</FormB.Label>
+                <FormB.Control
+                  onChange={formikProps.handleChange("house")}
+                  onBlur={formikProps.handleBlur("house")}
+                  value={formikProps.values.house}
+                  autoComplete={"off"}
+                />
+                <ErrorMessage
+                  name="house"
+                  component="div"
+                  className={"mt-2 alert alert-danger"}
+                />
+              </FormB.Group>
+
+              <FormB.Group>
+                <FormB.Label>Last Name</FormB.Label>
+                <FormB.Control
+                  onChange={formikProps.handleChange("knownAs")}
+                  onBlur={formikProps.handleBlur("knownAs")}
+                  value={formikProps.values.knownAs}
+                  autoComplete={"off"}
+                />
+                <ErrorMessage
+                  name="knownAs"
+                  component="div"
+                  className={"mt-2 alert alert-danger"}
+                />
+              </FormB.Group>
+              <Button type="submit">Send</Button>
+            </Form>
+          </Card.Body>
+        </Card>
+      )}
+    </Formik>
   );
 };
 

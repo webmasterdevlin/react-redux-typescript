@@ -33,7 +33,7 @@ const Villains: React.FC<IProps> = () => {
                 "list-group-item col-12 d-flex justify-content-between"
               }
             >
-              {`${v.firstName} ${v.lastName} is ${v.knownAs}`}
+              <span>{`${v.firstName} ${v.lastName} is ${v.knownAs}`}</span>
               <Button
                 onClick={() => dispatch(removeVillain(v.id))}
                 variant="danger"

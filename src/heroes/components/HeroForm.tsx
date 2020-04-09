@@ -9,7 +9,6 @@ import * as Yup from "yup";
 import FormB from "react-bootstrap/Form";
 import Card from "react-bootstrap/Card";
 
-/* Using Formik */
 const HeroForm: React.FC = () => {
   const dispatch: Dispatch = useDispatch();
 
@@ -109,16 +108,3 @@ const HeroForm: React.FC = () => {
 };
 
 export default HeroForm;
-
-/* abstraction of the repeated Field and ErrorMessage above */
-const CustomField = ({ ...props }: any) => {
-  const [field, meta] = useField(props);
-  return (
-    <>
-      <input className="text-input" {...field} {...props} />
-      {meta.touched && meta.error ? (
-        <div className="error">{meta.error}</div>
-      ) : null}
-    </>
-  );
-};

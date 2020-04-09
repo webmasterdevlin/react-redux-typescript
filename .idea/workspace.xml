@@ -1,11 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ed4cb247-8ac5-44a5-8dc5-3c3bca58f244" name="Default Changelist" comment="updated react">
-      <change beforePath="$PROJECT_DIR$/../.idea/watcherTasks.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/watcherTasks.xml" afterDir="false" />
+    <list default="true" id="ed4cb247-8ac5-44a5-8dc5-3c3bca58f244" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../db.json" beforeDir="false" afterPath="$PROJECT_DIR$/../db.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/heroes/components/HeroForm.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/../src/heroes/components/HeroForm.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/villains/components/VillainForm.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/../src/villains/components/VillainForm.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/villains/pages/Villains.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/../src/villains/pages/Villains.tsx" afterDir="false" />
     </list>
+    <list id="47f8df4d-8224-4418-b01f-0df197bfaa01" name="Revert: " comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -74,6 +77,7 @@
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="ed4cb247-8ac5-44a5-8dc5-3c3bca58f244" name="Default Changelist" comment="" />
+      <changelist id="47f8df4d-8224-4418-b01f-0df197bfaa01" name="Revert: " comment="" />
       <created>1578397855061</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
@@ -110,7 +114,8 @@
       <workItem from="1586289903594" duration="901000" />
       <workItem from="1586348797068" duration="204000" />
       <workItem from="1586349023976" duration="17000" />
-      <workItem from="1586464324243" duration="414000" />
+      <workItem from="1586464324243" duration="1225000" />
+      <workItem from="1586465573999" duration="190000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1578413672560</created>
@@ -154,7 +159,28 @@
       <option name="project" value="LOCAL" />
       <updated>1585170259154</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="updated react">
+      <created>1586465032407</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1586465032407</updated>
+    </task>
+    <task id="LOCAL-00008" summary="updated villains">
+      <created>1586465247380</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1586465247380</updated>
+    </task>
+    <task id="LOCAL-00009" summary="added yup to villain form">
+      <created>1586465336893</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1586465336893</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -167,7 +193,9 @@
     <MESSAGE value="refactor validationSchema" />
     <MESSAGE value="updated form to bootstrap" />
     <MESSAGE value="updated react" />
-    <option name="LAST_COMMIT_MESSAGE" value="updated react" />
+    <MESSAGE value="updated villains" />
+    <MESSAGE value="added yup to villain form" />
+    <option name="LAST_COMMIT_MESSAGE" value="added yup to villain form" />
   </component>
   <component name="WindowStateProjectService">
     <state x="-3067" y="275" key="#Notifications" timestamp="1578399591924">
@@ -182,11 +210,12 @@
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
     <state x="729" y="289" width="524" height="509" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/1920.0.1920.1080/72.27.1848.1053@72.27.1848.1053" timestamp="1585154733177" />
-    <state x="639" y="79" width="1046" height="1001" key="CommitChangelistDialog2" timestamp="1585733378509">
-      <screen x="72" y="27" width="1848" height="1053" />
+    <state x="631" y="63" width="912" height="1017" key="CommitChangelistDialog2" timestamp="1586465336829">
+      <screen x="60" y="27" width="1860" height="1053" />
     </state>
     <state x="515" y="24" key="CommitChangelistDialog2/-1920.23.1920.1057/0.23.1680.982@0.23.1680.982" timestamp="1579735017001" />
     <state x="-3055" y="112" key="CommitChangelistDialog2/0.0.1536.824/-3840.0.2560.1400/-7680.0.2560.1400@-3840.0.2560.1400" timestamp="1579776104665" />
+    <state x="631" y="63" width="912" height="1017" key="CommitChangelistDialog2/1920.0.1920.1080/60.27.1860.1053@60.27.1860.1053" timestamp="1586465336829" />
     <state x="639" y="79" width="1046" height="1001" key="CommitChangelistDialog2/1920.0.1920.1080/72.27.1848.1053@72.27.1848.1053" timestamp="1585733378509" />
     <state x="688" y="341" width="722" height="466" key="EditFileWatcherDialog" timestamp="1586464735782">
       <screen x="60" y="27" width="1860" height="1053" />
@@ -203,10 +232,15 @@
       <screen x="-3840" y="0" width="2560" height="1400" />
     </state>
     <state x="-2757" y="566" key="Github.ShareDialog/0.0.1536.824/-3840.0.2560.1400/-7680.0.2560.1400@-3840.0.2560.1400" timestamp="1578414490771" />
-    <state x="790" y="207" width="692" height="751" key="RollbackChangesDialog" timestamp="1585733376615">
-      <screen x="72" y="27" width="1848" height="1053" />
+    <state x="872" y="407" width="476" height="273" key="MultipleFileMergeDialog" timestamp="1586465262464">
+      <screen x="60" y="27" width="1860" height="1053" />
+    </state>
+    <state x="872" y="407" width="476" height="273" key="MultipleFileMergeDialog/1920.0.1920.1080/60.27.1860.1053@60.27.1860.1053" timestamp="1586465262464" />
+    <state x="783" y="207" width="692" height="751" key="RollbackChangesDialog" timestamp="1586465234917">
+      <screen x="60" y="27" width="1860" height="1053" />
     </state>
     <state x="-2845" y="239" key="RollbackChangesDialog/0.0.1536.824/-3840.0.2560.1400/-7680.0.2560.1400@-3840.0.2560.1400" timestamp="1579775931576" />
+    <state x="783" y="207" key="RollbackChangesDialog/1920.0.1920.1080/60.27.1860.1053@60.27.1860.1053" timestamp="1586465234917" />
     <state x="790" y="207" width="692" height="751" key="RollbackChangesDialog/1920.0.1920.1080/72.27.1848.1053@72.27.1848.1053" timestamp="1585733376615" />
     <state x="695" y="187" width="991" height="737" key="SettingsEditor" timestamp="1586464737657">
       <screen x="60" y="27" width="1860" height="1053" />
@@ -216,10 +250,19 @@
     <state x="2420" y="198" width="1022" height="737" key="SettingsEditor/1920.0.1920.1080/60.27.1860.1053@1920.0.1920.1080" timestamp="1586348997406" />
     <state x="695" y="187" width="991" height="737" key="SettingsEditor/1920.0.1920.1080/60.27.1860.1053@60.27.1860.1053" timestamp="1586464737657" />
     <state x="553" y="220" width="1022" height="737" key="SettingsEditor/1920.0.1920.1080/72.27.1848.1053@72.27.1848.1053" timestamp="1585156276449" />
-    <state x="630" y="300" width="800" height="543" key="Vcs.Push.Dialog.v2" timestamp="1585170260997">
-      <screen x="72" y="27" width="1848" height="1053" />
+    <state x="644" y="175" width="681" height="737" key="VCS.ChangeListViewerDialog" timestamp="1586465058782">
+      <screen x="60" y="27" width="1860" height="1053" />
+    </state>
+    <state x="644" y="175" width="681" height="737" key="VCS.ChangeListViewerDialog/1920.0.1920.1080/60.27.1860.1053@60.27.1860.1053" timestamp="1586465058782" />
+    <state x="833" y="449" width="303" height="189" key="VCS.ChangelistChooser" timestamp="1586465054590">
+      <screen x="60" y="27" width="1860" height="1053" />
+    </state>
+    <state x="833" y="449" width="303" height="189" key="VCS.ChangelistChooser/1920.0.1920.1080/60.27.1860.1053@60.27.1860.1053" timestamp="1586465054590" />
+    <state x="622" y="300" width="800" height="543" key="Vcs.Push.Dialog.v2" timestamp="1586465338951">
+      <screen x="60" y="27" width="1860" height="1053" />
     </state>
     <state x="-3067" y="363" key="Vcs.Push.Dialog.v2/0.0.1536.824/-3840.0.2560.1400/-7680.0.2560.1400@-3840.0.2560.1400" timestamp="1579776106952" />
+    <state x="622" y="300" width="800" height="543" key="Vcs.Push.Dialog.v2/1920.0.1920.1080/60.27.1860.1053@60.27.1860.1053" timestamp="1586465338951" />
     <state x="630" y="300" width="800" height="543" key="Vcs.Push.Dialog.v2/1920.0.1920.1080/72.27.1848.1053@72.27.1848.1053" timestamp="1585170260997" />
     <state x="2781" y="400" width="247" height="314" key="cloudConfig.SelfSettingsDialog" timestamp="1586265731175">
       <screen x="1920" y="0" width="1920" height="1080" />
