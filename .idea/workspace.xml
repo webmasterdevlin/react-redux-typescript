@@ -3,17 +3,12 @@
   <component name="ChangeListManager">
     <list default="true" id="d96609fc-7c17-4ab9-ab20-5548470e4ce9" name="Default Changelist" comment="updated">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.prettierrc" beforeDir="false" afterPath="$PROJECT_DIR$/.prettierrc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Router.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Router.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/features/heroes/components/HeroForm.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/heroes/components/HeroForm.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/features/heroes/hero-actions.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/heroes/hero-actions.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/features/heroes/hero-reducer.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/heroes/hero-reducer.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/features/heroes/hero-saga.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/heroes/hero-saga.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/features/heroes/hero-service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/heroes/hero-service.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/features/heroes/hero-types.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/heroes/hero-types.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/features/heroes/pages/EditHero.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/heroes/pages/EditHero.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/features/heroes/pages/Heroes.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/heroes/pages/Heroes.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/features/villains/components/VillainForm.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/villains/components/VillainForm.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/features/villains/pages/EditVillain.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/villains/pages/EditVillain.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/features/villains/pages/Villains.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/villains/pages/Villains.tsx" afterDir="false" />
@@ -21,7 +16,6 @@
       <change beforePath="$PROJECT_DIR$/src/features/villains/villain-reducer.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/villains/villain-reducer.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/features/villains/villain-service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/villains/villain-service.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/features/villains/villain-types.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/villains/villain-types.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/serviceWorker.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/serviceWorker.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/store/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/index.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -78,7 +72,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1601719051796</updated>
-      <workItem from="1601719054043" duration="1129000" />
+      <workItem from="1601719054043" duration="2865000" />
     </task>
     <task id="LOCAL-00001" summary="updated">
       <created>1601719602382</created>
@@ -115,6 +109,10 @@
       <screen x="3840" y="0" width="2560" height="1400" />
     </state>
     <state x="4826" y="474" key="#com.intellij.fileTypes.FileTypeChooser/3840.0.2560.1400/0.0.2560.1400@3840.0.2560.1400" timestamp="1601719353124" />
+    <state x="4879" y="348" key="#com.intellij.ide.util.MemberChooser" timestamp="1601720826588">
+      <screen x="3840" y="0" width="2560" height="1400" />
+    </state>
+    <state x="4879" y="348" key="#com.intellij.ide.util.MemberChooser/3840.0.2560.1400/0.0.2560.1400@3840.0.2560.1400" timestamp="1601720826588" />
     <state x="4416" y="104" key="CommitChangelistDialog2" timestamp="1601720027736">
       <screen x="3840" y="0" width="2560" height="1400" />
     </state>

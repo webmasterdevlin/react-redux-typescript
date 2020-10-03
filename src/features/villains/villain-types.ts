@@ -1,19 +1,19 @@
-export interface IVillainState {
-  readonly villains: IVillainModel[];
-  readonly villain: IVillainModel;
+export type VillainStateModel = {
+  readonly villains: VillainModel[];
+  readonly villain: VillainModel;
   readonly isLoading: boolean;
   readonly error: string;
-}
+};
 
 export type ApiResponse = Record<string, any>;
 
-export interface IVillainModel extends ApiResponse {
+export type VillainModel = {
   id: string;
   firstName: string;
   lastName: string;
   house: string;
   knownAs: string;
-}
+} & ApiResponse;
 
 /* action types */
 export const VillainActionTypes = {

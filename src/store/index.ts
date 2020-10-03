@@ -11,14 +11,14 @@ import createSagaMiddleware from 'redux-saga';
 import thunk from 'redux-thunk';
 
 import { heroReducer } from '../features/heroes/hero-reducer';
-import { IHeroState } from '../features/heroes/hero-types';
+import { HeroStateType } from '../features/heroes/hero-types';
 import { heroSaga } from '../features/heroes/hero-saga';
 import { villainReducer } from '../features/villains/villain-reducer';
-import { IVillainState } from '../features/villains/villain-types';
+import { VillainStateModel } from '../features/villains/villain-types';
 
 export interface IApplicationState {
-  heroReducer: IHeroState;
-  villainReducer: IVillainState;
+  heroReducer: HeroStateType;
+  villainReducer: VillainStateModel;
 }
 
 const rootReducer = combineReducers<IApplicationState>({

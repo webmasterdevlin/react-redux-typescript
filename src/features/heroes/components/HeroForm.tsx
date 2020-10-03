@@ -2,28 +2,29 @@ import React, { useState } from 'react';
 import Button from 'react-bootstrap/Button';
 import { addHero } from '../hero-actions';
 import { useDispatch } from 'react-redux';
-import { IHeroModel } from '../hero-types';
+import { HeroModel } from '../hero-types';
 import { Dispatch } from 'redux';
-import { ErrorMessage, Form, Formik, useField } from 'formik';
-import * as Yup from 'yup';
+import { ErrorMessage, Form, Formik } from 'formik';
+import * as yup from 'yup';
 import FormB from 'react-bootstrap/Form';
 import Card from 'react-bootstrap/Card';
 
 const HeroForm: React.FC = () => {
   const dispatch: Dispatch = useDispatch();
 
-  const [newHero, setNewHero] = useState<IHeroModel>({
+  const [newHero, setNewHero] = useState<HeroModel>({
+    id: '',
     firstName: '',
     lastName: '',
     house: '',
     knownAs: '',
-  } as IHeroModel);
+  });
 
-  const validationSchema = Yup.object({
-    firstName: Yup.string().label('First Name').min(2).required(),
-    lastName: Yup.string().label('Last Name').min(2).required(),
-    house: Yup.string().required('required'),
-    knownAs: Yup.string().required('required'),
+  const validationSchema = yup.object({
+    firstName: yup.string().label('First Name').min(2).required(),
+    lastName: yup.string().label('Last Name').min(2).required(),
+    house: yup.string().required('required'),
+    knownAs: yup.string().required('required'),
   });
 
   return (

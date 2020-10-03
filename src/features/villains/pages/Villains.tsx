@@ -6,9 +6,9 @@ import { IApplicationState } from '../../../store';
 import Button from 'react-bootstrap/Button';
 import VillainForm from '../components/VillainForm';
 
-interface IProps {}
+type Props = {};
 
-const Villains: React.FC<IProps> = () => {
+const Villains: React.FC<Props> = () => {
   const dispatch: Dispatch = useDispatch();
   const { villains, isLoading } = useSelector(
     (state: IApplicationState) => state.villainReducer,

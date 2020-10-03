@@ -1,8 +1,8 @@
 import React from 'react';
 
-type IProps = {};
+type Props = {};
 
-const EditVillain: React.FC<IProps> = () => {
+const EditVillain: React.FC<Props> = () => {
   return <h1>EditVillain Works!</h1>;
 };
 

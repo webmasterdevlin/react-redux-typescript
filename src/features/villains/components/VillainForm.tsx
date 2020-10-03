@@ -2,27 +2,28 @@ import React, { useState } from 'react';
 import Button from 'react-bootstrap/Button';
 import { addVillain } from '../villain-actions';
 import { useDispatch } from 'react-redux';
-import { IVillainModel } from '../villain-types';
+import { VillainModel } from '../villain-types';
 import { Dispatch } from 'redux';
-import * as Yup from 'yup';
+import * as yup from 'yup';
 import { ErrorMessage, Form, Formik } from 'formik';
 import Card from 'react-bootstrap/Card';
 import FormB from 'react-bootstrap/Form';
 
 const VillainForm: React.FC = () => {
   const dispatch: Dispatch = useDispatch();
-  const [newVillain, setNewVillain] = useState<IVillainModel>({
+
+  const [newVillain, setNewVillain] = useState<VillainModel>({
     firstName: '',
     lastName: '',
     house: '',
     knownAs: '',
-  } as IVillainModel);
+  } as VillainModel);
 
-  const validationSchema = Yup.object({
-    firstName: Yup.string().label('First Name').min(2).required(),
-    lastName: Yup.string().label('Last Name').min(2).required(),
-    house: Yup.string().required('required'),
-    knownAs: Yup.string().required('required'),
+  const validationSchema = yup.object({
+    firstName: yup.string().label('First Name').min(2).required(),
+    lastName: yup.string().label('Last Name').min(2).required(),
+    house: yup.string().required('required'),
+    knownAs: yup.string().required('required'),
   });
 
   return (

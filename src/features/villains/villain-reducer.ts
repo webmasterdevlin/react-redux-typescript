@@ -1,15 +1,7 @@
-import { IVillainState, VillainActionTypes } from './villain-types';
+import { VillainStateModel, VillainActionTypes } from './villain-types';
 
-const initialState: IVillainState = {
-  villains: [
-    {
-      id: '',
-      firstName: '',
-      lastName: '',
-      house: '',
-      knownAs: '',
-    },
-  ],
+const initialState: VillainStateModel = {
+  villains: [],
   villain: {
     id: '',
     firstName: '',
@@ -21,15 +13,15 @@ const initialState: IVillainState = {
   error: '',
 };
 
-interface IAction {
+type IAction = {
   type: string;
   payload: any;
-}
+};
 
 export const villainReducer = (
-  state: IVillainState = initialState,
+  state: VillainStateModel = initialState,
   action: IAction,
-): IVillainState => {
+): VillainStateModel => {
   switch (action.type) {
     case VillainActionTypes.FETCH_VILLAINS_REQUEST:
       return { ...state, isLoading: true };

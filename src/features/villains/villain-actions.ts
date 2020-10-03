@@ -5,7 +5,7 @@ import {
   putVillain,
 } from './villain-service';
 import { Dispatch, ActionCreator } from 'redux';
-import { IVillainModel, VillainActionTypes } from './villain-types';
+import { VillainModel, VillainActionTypes } from './villain-types';
 
 /* action creators */
 export const fetchVillains: ActionCreator<any> = () => {
@@ -48,7 +48,7 @@ export const removeVillain: ActionCreator<any> = (id: string) => {
   };
 };
 
-export const addVillain: ActionCreator<any> = (villain: IVillainModel) => {
+export const addVillain: ActionCreator<any> = (villain: VillainModel) => {
   return async (dispatch: Dispatch) => {
     dispatch({
       type: VillainActionTypes.ADD_VILLAIN_REQUEST,
@@ -66,7 +66,7 @@ export const addVillain: ActionCreator<any> = (villain: IVillainModel) => {
   };
 };
 
-export const updateVillain: ActionCreator<any> = (villain: IVillainModel) => {
+export const updateVillain: ActionCreator<any> = (villain: VillainModel) => {
   return async (dispatch: Dispatch) => {
     dispatch({
       type: VillainActionTypes.UPDATE_VILLAIN_REQUEST,

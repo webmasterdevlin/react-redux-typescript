@@ -1,15 +1,7 @@
-import { IHeroState, HeroActionTypes } from './hero-types';
+import { HeroStateType, HeroActionTypes } from './hero-types';
 
-const initialState: IHeroState = {
-  heroes: [
-    {
-      id: '',
-      firstName: '',
-      lastName: '',
-      house: '',
-      knownAs: '',
-    },
-  ],
+const initialState: HeroStateType = {
+  heroes: [],
   hero: {
     id: '',
     firstName: '',
@@ -21,15 +13,15 @@ const initialState: IHeroState = {
   error: '',
 };
 
-interface IAction {
+type ActionType = {
   type: string;
   payload: any;
-}
+};
 
 export const heroReducer = (
-  state: IHeroState = initialState,
-  action: IAction,
-): IHeroState => {
+  state: HeroStateType = initialState,
+  action: ActionType,
+): HeroStateType => {
   switch (action.type) {
     case HeroActionTypes.FETCH_HEROES_REQUEST:
       return { ...state, isLoading: true };

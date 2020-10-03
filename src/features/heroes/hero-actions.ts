@@ -1,26 +1,26 @@
 /* action creators of Saga */
-import { IHeroModel, HeroActionTypes } from './hero-types';
+import { HeroModel, HeroActionTypes } from './hero-types';
 import { Action } from 'redux';
 
-interface IAction extends Action {
+type ActionType = {
   readonly payload?: any;
-}
+} & Action;
 
-export const fetchHeroes = (): IAction => ({
+export const fetchHeroes = (): ActionType => ({
   type: HeroActionTypes.FETCH_HEROES_REQUEST,
 });
 
-export const removeHero = (id: string): IAction => ({
+export const removeHero = (id: string): ActionType => ({
   type: HeroActionTypes.REMOVE_HERO_REQUEST,
   payload: id,
 });
 
-export const addHero = (hero: IHeroModel): IAction => ({
+export const addHero = (hero: HeroModel): ActionType => ({
   type: HeroActionTypes.ADD_HERO_REQUEST,
   payload: hero,
 });
 
-export const updateHero = (hero: IHeroModel) => ({
+export const updateHero = (hero: HeroModel) => ({
   type: HeroActionTypes.UPDATE_HERO_REQUEST,
   payload: hero,
 });

@@ -1,8 +1,8 @@
 import React from 'react';
 
-interface IProps {}
+type Props = {};
 
-const EditHero: React.FC<IProps> = () => {
+const EditHero: React.FC<Props> = () => {
   return <h1>EditHero Works!</h1>;
 };
 

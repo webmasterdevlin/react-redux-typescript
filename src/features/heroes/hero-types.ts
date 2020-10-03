@@ -1,19 +1,19 @@
-export interface IHeroState {
-  readonly heroes: IHeroModel[];
-  readonly hero: IHeroModel;
+export type HeroStateType = {
+  readonly heroes: HeroModel[];
+  readonly hero: HeroModel;
   readonly isLoading: boolean;
   readonly error: string;
-}
+};
 
 export type ApiResponse = Record<string, any>;
 
-export interface IHeroModel extends ApiResponse {
+export type HeroModel = {
   id: string;
   firstName: string;
   lastName: string;
   house: string;
   knownAs: string;
-}
+} & ApiResponse;
 
 /* action types */
 export const HeroActionTypes = {
