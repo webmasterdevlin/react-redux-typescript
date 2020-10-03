@@ -1,32 +1,49 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ed4cb247-8ac5-44a5-8dc5-3c3bca58f244" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../db.json" beforeDir="false" afterPath="$PROJECT_DIR$/../db.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/heroes/components/HeroForm.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/../src/heroes/components/HeroForm.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/villains/components/VillainForm.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/../src/villains/components/VillainForm.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../src/villains/pages/Villains.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/../src/villains/pages/Villains.tsx" afterDir="false" />
+    <list default="true" id="d96609fc-7c17-4ab9-ab20-5548470e4ce9" name="Default Changelist" comment="updated">
+      <change afterPath="$PROJECT_DIR$/.huskyrc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/prettier.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.lintstagedrc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.prettierrc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/features/heroes/pages/Heroes.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/$CACHE_FILE$" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/devlinduldulao.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/react-redux-typescript.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/react-redux-typescript.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/watcherTasks.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Router.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Router.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/heroes/components/HeroForm.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/heroes/components/HeroForm.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/heroes/hero-actions.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/heroes/hero-actions.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/heroes/hero-reducer.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/heroes/hero-reducer.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/heroes/hero-saga.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/heroes/hero-saga.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/heroes/hero-service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/heroes/hero-service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/heroes/hero-types.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/heroes/hero-types.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/heroes/pages/EditHero.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/heroes/pages/EditHero.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/heroes/pages/Heroes.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/villains/components/VillainForm.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/villains/components/VillainForm.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/villains/pages/EditVillain.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/villains/pages/EditVillain.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/villains/pages/Villains.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/villains/pages/Villains.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/villains/villain-actions.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/villains/villain-actions.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/villains/villain-reducer.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/villains/villain-reducer.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/villains/villain-service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/villains/villain-service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/villains/villain-types.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/villains/villain-types.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" />
     </list>
-    <list id="47f8df4d-8224-4418-b01f-0df197bfaa01" name="Revert: " comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ExportToHTMLSettings">
-    <option name="OUTPUT_DIRECTORY" value="$PROJECT_DIR$/exportToHTML" />
-  </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="TypeScript File" />
-        <option value="TypeScript JSX File" />
-      </list>
-    </option>
-  </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="JsFlowSettings">
     <service-enabled>true</service-enabled>
@@ -34,243 +51,91 @@
     <other-services-enabled>true</other-services-enabled>
     <auto-save>true</auto-save>
   </component>
-  <component name="PackageJsonUpdateNotifier">
-    <dismissed value="$PROJECT_DIR$/../package.json" />
-  </component>
-  <component name="ProjectId" id="1W49AJZkgQA5XDrmTRV9B1KGD87" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+  <component name="ProjectId" id="1iMYhzkoUXS3jtTFabLkAJbLWdU" />
+  <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectViewState">
-    <option name="autoscrollFromSource" value="true" />
+    <option name="autoscrollToSource" value="true" />
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="TF_FMT" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="/usr/lib/node_modules/prettier" />
-    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.path.for.package.standard" value="project" />
-    <property name="node.js.path.for.package.tslint" value="project" />
-    <property name="node.js.selected.package.eslint" value="" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.standard" value="" />
-    <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="nodejs_package_manager_path" value="yarn" />
-    <property name="prettierjs.PrettierConfiguration.Package" value="C:\Users\devduldu\Downloads\react-redux-typescript\node_modules\prettier" />
-    <property name="settings.editor.selected.configurable" value="watcher.settings" />
-    <property name="ts.external.directory.path" value="$PROJECT_DIR$/../node_modules/typescript/lib" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="prettierjs.PrettierConfiguration.Package" value="C:\Users\devduldu\AppData\Roaming\npm\node_modules\prettier" />
+    <property name="run.prettier.on.save" value="true" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.CommitDialog" />
+    <property name="ts.external.directory.path" value="C:\Development\TourOfHeroes\Frontend\Reactjs\react-redux-typescript\node_modules\typescript\lib" />
+    <property name="vue.rearranger.settings.migration" value="true" />
   </component>
-  <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\devduldu\Downloads\react-redux-typescript\src\heroes" />
-    </key>
-  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration>C:\Users\Webmaster\AppData\Roaming\Subversion</configuration>
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="ed4cb247-8ac5-44a5-8dc5-3c3bca58f244" name="Default Changelist" comment="" />
-      <changelist id="47f8df4d-8224-4418-b01f-0df197bfaa01" name="Revert: " comment="" />
-      <created>1578397855061</created>
+      <changelist id="d96609fc-7c17-4ab9-ab20-5548470e4ce9" name="Default Changelist" comment="" />
+      <created>1601719051796</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1578397855061</updated>
-      <workItem from="1578397863163" duration="13000" />
-      <workItem from="1578397891641" duration="15386000" />
-      <workItem from="1578482171044" duration="3969000" />
-      <workItem from="1578487003912" duration="2075000" />
-      <workItem from="1579727713403" duration="6871000" />
-      <workItem from="1579775899734" duration="77000" />
-      <workItem from="1579775991000" duration="14000" />
-      <workItem from="1579776009896" duration="169000" />
-      <workItem from="1579776193517" duration="7000" />
-      <workItem from="1579776211634" duration="55000" />
-      <workItem from="1579777703712" duration="83000" />
-      <workItem from="1585150126924" duration="1311000" />
-      <workItem from="1585151485087" duration="4792000" />
-      <workItem from="1585162951776" duration="1238000" />
-      <workItem from="1585697630180" duration="1626000" />
-      <workItem from="1585840384230" duration="2000" />
-      <workItem from="1585939182992" duration="1048000" />
-      <workItem from="1585954930537" duration="61000" />
-      <workItem from="1585955461265" duration="39000" />
-      <workItem from="1586258076403" duration="289000" />
-      <workItem from="1586264608319" duration="55000" />
-      <workItem from="1586264676156" duration="14000" />
-      <workItem from="1586264703758" duration="636000" />
-      <workItem from="1586265357279" duration="93000" />
-      <workItem from="1586265463039" duration="476000" />
-      <workItem from="1586266044588" duration="121000" />
-      <workItem from="1586266179143" duration="68000" />
-      <workItem from="1586266284862" duration="240000" />
-      <workItem from="1586288621980" duration="687000" />
-      <workItem from="1586289903594" duration="901000" />
-      <workItem from="1586348797068" duration="204000" />
-      <workItem from="1586349023976" duration="17000" />
-      <workItem from="1586464324243" duration="1225000" />
-      <workItem from="1586465573999" duration="190000" />
+      <updated>1601719051796</updated>
+      <workItem from="1601719054043" duration="527000" />
     </task>
-    <task id="LOCAL-00001" summary="initial commit">
-      <created>1578413672560</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1578413672560</updated>
-    </task>
-    <task id="LOCAL-00002" summary="added a page">
-      <created>1578414396761</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1578414396761</updated>
-    </task>
-    <task id="LOCAL-00003" summary="added villainReducer">
-      <created>1578494990714</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1578494990714</updated>
-    </task>
-    <task id="LOCAL-00004" summary="refactor validationSchema">
-      <created>1579776105195</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1579776105195</updated>
-    </task>
-    <task id="LOCAL-00005" summary="updated form to bootstrap">
-      <created>1585156043990</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1585156043990</updated>
-    </task>
-    <task id="LOCAL-00006" summary="updated react">
-      <created>1585170259154</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1585170259154</updated>
-    </task>
-    <task id="LOCAL-00007" summary="updated react">
-      <created>1586465032407</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1586465032407</updated>
-    </task>
-    <task id="LOCAL-00008" summary="updated villains">
-      <created>1586465247380</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1586465247380</updated>
-    </task>
-    <task id="LOCAL-00009" summary="added yup to villain form">
-      <created>1586465336893</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1586465336893</updated>
-    </task>
-    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
+  <component name="TerminalProjectNonSharedOptionsProvider">
+    <option name="shellPath" value="C:\\Program Files\\Git\\bin\\bash.exe" />
+  </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="2" />
+    <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="initial commit" />
-    <MESSAGE value="added a page" />
-    <MESSAGE value="added villainReducer" />
-    <MESSAGE value="refactor validationSchema" />
-    <MESSAGE value="updated form to bootstrap" />
-    <MESSAGE value="updated react" />
-    <MESSAGE value="updated villains" />
-    <MESSAGE value="added yup to villain form" />
-    <option name="LAST_COMMIT_MESSAGE" value="added yup to villain form" />
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
+    <option name="CHECK_NEW_TODO" value="false" />
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="updated" />
+    <option name="LAST_COMMIT_MESSAGE" value="updated" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="-3067" y="275" key="#Notifications" timestamp="1578399591924">
-      <screen x="-3840" y="0" width="2560" height="1400" />
+    <state x="4826" y="474" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1601719353124">
+      <screen x="3840" y="0" width="2560" height="1400" />
     </state>
-    <state x="-3067" y="275" key="#Notifications/0.0.1536.824/-3840.0.2560.1400/-7680.0.2560.1400@-3840.0.2560.1400" timestamp="1578399591924" />
-    <state x="832" y="282" width="424" height="591" key="#com.intellij.ide.macro.MacrosDialog" timestamp="1586464705437">
-      <screen x="60" y="27" width="1860" height="1053" />
+    <state x="4826" y="474" key="#com.intellij.fileTypes.FileTypeChooser/3840.0.2560.1400/0.0.2560.1400@3840.0.2560.1400" timestamp="1601719353124" />
+    <state x="4416" y="104" key="CommitChangelistDialog2" timestamp="1601719574659">
+      <screen x="3840" y="0" width="2560" height="1400" />
     </state>
-    <state x="832" y="282" width="424" height="591" key="#com.intellij.ide.macro.MacrosDialog/1920.0.1920.1080/60.27.1860.1053@60.27.1860.1053" timestamp="1586464705437" />
-    <state x="729" y="289" width="524" height="509" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1585154733177">
-      <screen x="72" y="27" width="1848" height="1053" />
+    <state x="4416" y="104" key="CommitChangelistDialog2/3840.0.2560.1400/0.0.2560.1400@3840.0.2560.1400" timestamp="1601719574659" />
+    <state width="2534" height="368" key="GridCell.Tab.0.bottom" timestamp="1601719129337">
+      <screen x="3840" y="0" width="2560" height="1400" />
     </state>
-    <state x="729" y="289" width="524" height="509" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/1920.0.1920.1080/72.27.1848.1053@72.27.1848.1053" timestamp="1585154733177" />
-    <state x="631" y="63" width="912" height="1017" key="CommitChangelistDialog2" timestamp="1586465336829">
-      <screen x="60" y="27" width="1860" height="1053" />
+    <state width="2534" height="368" key="GridCell.Tab.0.bottom/3840.0.2560.1400/0.0.2560.1400@3840.0.2560.1400" timestamp="1601719129337" />
+    <state width="2534" height="368" key="GridCell.Tab.0.center" timestamp="1601719129337">
+      <screen x="3840" y="0" width="2560" height="1400" />
     </state>
-    <state x="515" y="24" key="CommitChangelistDialog2/-1920.23.1920.1057/0.23.1680.982@0.23.1680.982" timestamp="1579735017001" />
-    <state x="-3055" y="112" key="CommitChangelistDialog2/0.0.1536.824/-3840.0.2560.1400/-7680.0.2560.1400@-3840.0.2560.1400" timestamp="1579776104665" />
-    <state x="631" y="63" width="912" height="1017" key="CommitChangelistDialog2/1920.0.1920.1080/60.27.1860.1053@60.27.1860.1053" timestamp="1586465336829" />
-    <state x="639" y="79" width="1046" height="1001" key="CommitChangelistDialog2/1920.0.1920.1080/72.27.1848.1053@72.27.1848.1053" timestamp="1585733378509" />
-    <state x="688" y="341" width="722" height="466" key="EditFileWatcherDialog" timestamp="1586464735782">
-      <screen x="60" y="27" width="1860" height="1053" />
+    <state width="2534" height="368" key="GridCell.Tab.0.center/3840.0.2560.1400/0.0.2560.1400@3840.0.2560.1400" timestamp="1601719129337" />
+    <state width="2534" height="368" key="GridCell.Tab.0.left" timestamp="1601719129337">
+      <screen x="3840" y="0" width="2560" height="1400" />
     </state>
-    <state x="-2976" y="418" width="831" height="608" key="EditFileWatcherDialog/0.0.1536.824/-3840.0.2560.1400/-7680.0.2560.1400@-3840.0.2560.1400" timestamp="1578403746415" />
-    <state x="2568" y="322" width="722" height="477" key="EditFileWatcherDialog/1920.0.1920.1080/60.27.1860.1053@1920.0.1920.1080" timestamp="1585939367443" />
-    <state x="688" y="341" width="722" height="466" key="EditFileWatcherDialog/1920.0.1920.1080/60.27.1860.1053@60.27.1860.1053" timestamp="1586464735782" />
-    <state x="2678" y="306" width="424" height="491" key="FileChooserDialogImpl" timestamp="1585939355796">
-      <screen x="1920" y="0" width="1920" height="1080" />
+    <state width="2534" height="368" key="GridCell.Tab.0.left/3840.0.2560.1400/0.0.2560.1400@3840.0.2560.1400" timestamp="1601719129337" />
+    <state width="2534" height="368" key="GridCell.Tab.0.right" timestamp="1601719129337">
+      <screen x="3840" y="0" width="2560" height="1400" />
     </state>
-    <state x="-2830" y="397" key="FileChooserDialogImpl/0.0.1536.824/-3840.0.2560.1400/-7680.0.2560.1400@-3840.0.2560.1400" timestamp="1578403704267" />
-    <state x="2678" y="306" width="424" height="491" key="FileChooserDialogImpl/1920.0.1920.1080/60.27.1860.1053@1920.0.1920.1080" timestamp="1585939355796" />
-    <state x="-2757" y="566" key="Github.ShareDialog" timestamp="1578414490771">
-      <screen x="-3840" y="0" width="2560" height="1400" />
+    <state width="2534" height="368" key="GridCell.Tab.0.right/3840.0.2560.1400/0.0.2560.1400@3840.0.2560.1400" timestamp="1601719129337" />
+    <state x="4520" y="259" key="SettingsEditor" timestamp="1601719474048">
+      <screen x="3840" y="0" width="2560" height="1400" />
     </state>
-    <state x="-2757" y="566" key="Github.ShareDialog/0.0.1536.824/-3840.0.2560.1400/-7680.0.2560.1400@-3840.0.2560.1400" timestamp="1578414490771" />
-    <state x="872" y="407" width="476" height="273" key="MultipleFileMergeDialog" timestamp="1586465262464">
-      <screen x="60" y="27" width="1860" height="1053" />
-    </state>
-    <state x="872" y="407" width="476" height="273" key="MultipleFileMergeDialog/1920.0.1920.1080/60.27.1860.1053@60.27.1860.1053" timestamp="1586465262464" />
-    <state x="783" y="207" width="692" height="751" key="RollbackChangesDialog" timestamp="1586465234917">
-      <screen x="60" y="27" width="1860" height="1053" />
-    </state>
-    <state x="-2845" y="239" key="RollbackChangesDialog/0.0.1536.824/-3840.0.2560.1400/-7680.0.2560.1400@-3840.0.2560.1400" timestamp="1579775931576" />
-    <state x="783" y="207" key="RollbackChangesDialog/1920.0.1920.1080/60.27.1860.1053@60.27.1860.1053" timestamp="1586465234917" />
-    <state x="790" y="207" width="692" height="751" key="RollbackChangesDialog/1920.0.1920.1080/72.27.1848.1053@72.27.1848.1053" timestamp="1585733376615" />
-    <state x="695" y="187" width="991" height="737" key="SettingsEditor" timestamp="1586464737657">
-      <screen x="60" y="27" width="1860" height="1053" />
-    </state>
-    <state x="437" y="203" key="SettingsEditor/-1920.23.1920.1057/0.23.1680.982@0.23.1680.982" timestamp="1579730169057" />
-    <state x="-3174" y="257" key="SettingsEditor/0.0.1536.824/-3840.0.2560.1400/-7680.0.2560.1400@-3840.0.2560.1400" timestamp="1578403749153" />
-    <state x="2420" y="198" width="1022" height="737" key="SettingsEditor/1920.0.1920.1080/60.27.1860.1053@1920.0.1920.1080" timestamp="1586348997406" />
-    <state x="695" y="187" width="991" height="737" key="SettingsEditor/1920.0.1920.1080/60.27.1860.1053@60.27.1860.1053" timestamp="1586464737657" />
-    <state x="553" y="220" width="1022" height="737" key="SettingsEditor/1920.0.1920.1080/72.27.1848.1053@72.27.1848.1053" timestamp="1585156276449" />
-    <state x="644" y="175" width="681" height="737" key="VCS.ChangeListViewerDialog" timestamp="1586465058782">
-      <screen x="60" y="27" width="1860" height="1053" />
-    </state>
-    <state x="644" y="175" width="681" height="737" key="VCS.ChangeListViewerDialog/1920.0.1920.1080/60.27.1860.1053@60.27.1860.1053" timestamp="1586465058782" />
-    <state x="833" y="449" width="303" height="189" key="VCS.ChangelistChooser" timestamp="1586465054590">
-      <screen x="60" y="27" width="1860" height="1053" />
-    </state>
-    <state x="833" y="449" width="303" height="189" key="VCS.ChangelistChooser/1920.0.1920.1080/60.27.1860.1053@60.27.1860.1053" timestamp="1586465054590" />
-    <state x="622" y="300" width="800" height="543" key="Vcs.Push.Dialog.v2" timestamp="1586465338951">
-      <screen x="60" y="27" width="1860" height="1053" />
-    </state>
-    <state x="-3067" y="363" key="Vcs.Push.Dialog.v2/0.0.1536.824/-3840.0.2560.1400/-7680.0.2560.1400@-3840.0.2560.1400" timestamp="1579776106952" />
-    <state x="622" y="300" width="800" height="543" key="Vcs.Push.Dialog.v2/1920.0.1920.1080/60.27.1860.1053@60.27.1860.1053" timestamp="1586465338951" />
-    <state x="630" y="300" width="800" height="543" key="Vcs.Push.Dialog.v2/1920.0.1920.1080/72.27.1848.1053@72.27.1848.1053" timestamp="1585170260997" />
-    <state x="2781" y="400" width="247" height="314" key="cloudConfig.SelfSettingsDialog" timestamp="1586265731175">
-      <screen x="1920" y="0" width="1920" height="1080" />
-    </state>
-    <state x="2781" y="400" width="247" height="314" key="cloudConfig.SelfSettingsDialog/1920.0.1920.1080/60.27.1860.1053@1920.0.1920.1080" timestamp="1586265731175" />
-    <state x="-2981" y="312" width="840" height="1034" key="search.everywhere.popup" timestamp="1578484608665">
-      <screen x="-3840" y="0" width="2560" height="1400" />
-    </state>
-    <state x="-2981" y="312" width="840" height="1034" key="search.everywhere.popup/0.0.1536.824/-3840.0.2560.1400/-7680.0.2560.1400@-3840.0.2560.1400" timestamp="1578484608665" />
+    <state x="4520" y="259" key="SettingsEditor/3840.0.2560.1400/0.0.2560.1400@3840.0.2560.1400" timestamp="1601719474048" />
   </component>
 </project>
