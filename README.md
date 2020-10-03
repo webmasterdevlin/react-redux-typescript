@@ -1,6 +1,6 @@
 ## React TypeScript Redux with Thunk, Saga, and Redux Toolkit
 
-#### Precomit hookis setup
+#### Precomit hook setup
 
 https://dev.to/juliang/configuring-prettier-and-typescript-compiler-as-a-pre-commit-hook-44jh
 
@@ -12,7 +12,7 @@ Create or go to your demo directory then run the following in the terminal or cm
 $ git clone https://github.com/webmasterdevlin/heroes-redux-typescript.git
 $ cd heroes-redux-typescript
 $ npm install
-$ npm run start
+$ npm run start:fullstack
 ```
 
 The React app and the fake web service will run concurrently.
