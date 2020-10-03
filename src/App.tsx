@@ -1,11 +1,11 @@
-import React from "react";
-import { BrowserRouter, Link } from "react-router-dom";
-import Router from "./Router";
-import { Provider } from "react-redux";
-import store from "./store";
-import Navbar from "react-bootstrap/Navbar";
-import Nav from "react-bootstrap/Nav";
-import { style } from "typestyle";
+import React from 'react';
+import { BrowserRouter, Link } from 'react-router-dom';
+import Router from './Router';
+import { Provider } from 'react-redux';
+import store from './store';
+import Navbar from 'react-bootstrap/Navbar';
+import Nav from 'react-bootstrap/Nav';
+import { style } from 'typestyle';
 
 const App: React.FC = () => {
   return (
@@ -15,18 +15,18 @@ const App: React.FC = () => {
           <Navbar bg="dark" expand="lg">
             <Nav className="mr-auto">
               <Nav.Link>
-                <Link className={navStyle} to={"heroes"}>
+                <Link className={} to={'heroes'}>
                   Heroes
                 </Link>
               </Nav.Link>
               <Nav.Link>
-                <Link className={navStyle} to={"villains"}>
+                <Link className={navStyle} to={'villains'}>
                   Villains
                 </Link>
               </Nav.Link>
             </Nav>
           </Navbar>
-          <div className={"container"}>
+          <div className={'container'}>
             <Router />
           </div>
         </>
@@ -35,6 +35,6 @@ const App: React.FC = () => {
   );
 };
 
-const navStyle = style({ color: "white" });
+const navStyle = style({ color: 'white' });
 
 export default App;

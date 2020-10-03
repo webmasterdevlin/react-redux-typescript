@@ -1,18 +1,18 @@
 export interface IVillainState {
-  readonly villains: IVillainModel[]
-  readonly villain: IVillainModel
-  readonly isLoading: boolean
-  readonly error: string
+  readonly villains: IVillainModel[];
+  readonly villain: IVillainModel;
+  readonly isLoading: boolean;
+  readonly error: string;
 }
 
-export type ApiResponse = Record<string, any>
+export type ApiResponse = Record<string, any>;
 
 export interface IVillainModel extends ApiResponse {
-  id: string
-  firstName: string
-  lastName: string
-  house: string
-  knownAs: string
+  id: string;
+  firstName: string;
+  lastName: string;
+  house: string;
+  knownAs: string;
 }
 
 /* action types */
@@ -32,4 +32,4 @@ export const VillainActionTypes = {
   UPDATE_VILLAIN_REQUEST: '@@/villain/UPDATE_VILLAIN_REQUEST',
   UPDATE_VILLAIN_SUCCESS: '@@/villain/UPDATE_VILLAIN_SUCCESS',
   UPDATE_VILLAIN_FAIL: '@@/villain/UPDATE_VILLAIN_FAIL',
-}
+};

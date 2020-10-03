@@ -1,18 +1,18 @@
 export interface IHeroState {
-  readonly heroes: IHeroModel[]
-  readonly hero: IHeroModel
-  readonly isLoading: boolean
-  readonly error: string
+  readonly heroes: IHeroModel[];
+  readonly hero: IHeroModel;
+  readonly isLoading: boolean;
+  readonly error: string;
 }
 
-export type ApiResponse = Record<string, any>
+export type ApiResponse = Record<string, any>;
 
 export interface IHeroModel extends ApiResponse {
-  id: string
-  firstName: string
-  lastName: string
-  house: string
-  knownAs: string
+  id: string;
+  firstName: string;
+  lastName: string;
+  house: string;
+  knownAs: string;
 }
 
 /* action types */
@@ -32,4 +32,4 @@ export const HeroActionTypes = {
   UPDATE_HERO_REQUEST: '@@/hero/UPDATE_HERO_REQUEST',
   UPDATE_HERO_SUCCESS: '@@/hero/UPDATE_HERO_SUCCESS',
   UPDATE_HERO_FAIL: '@@/hero/UPDATE_HERO_FAIL',
-}
+};

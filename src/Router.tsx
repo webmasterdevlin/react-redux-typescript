@@ -1,8 +1,8 @@
-import React from 'react'
-import { Redirect, Route, Switch } from 'react-router'
-import Heroes from './features/heroes/pages/Heroes'
-import EditHero from './features/heroes/pages/EditHero'
-import Villains from './features/villains/pages/Villains'
+import React from 'react';
+import { Redirect, Route, Switch } from 'react-router';
+import Heroes from './features/heroes/pages/Heroes';
+import EditHero from './features/heroes/pages/EditHero';
+import Villains from './features/villains/pages/Villains';
 
 const Router = () => (
   <Switch>
@@ -12,6 +12,6 @@ const Router = () => (
 
     <Redirect from={'/'} exact to={'/heroes'} />
   </Switch>
-)
+);
 
-export default Router
+export default Router;
