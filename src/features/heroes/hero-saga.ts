@@ -1,12 +1,17 @@
 import { put, takeEvery, call } from 'redux-saga/effects';
 import { all } from '@redux-saga/core/effects';
-import { getHeroes, deleteHero, postHero, putHero } from './hero-service';
+import {
+  getHeroesAxios,
+  deleteHero,
+  postHeroAxios,
+  putHero,
+} from './hero-service';
 import { HeroActionTypes } from './hero-types';
 
 /* function generator implementations of Saga */
 function* fetchingHeroes() {
   try {
-    const { data } = yield call(getHeroes); // saga
+    const { data } = yield call(getHeroesAxios); // saga
     yield put({ type: HeroActionTypes.FETCH_HEROES_SUCCESS, payload: data });
   } catch (e) {
     console.log(e.message);
@@ -29,7 +34,7 @@ function* removingHero({ payload: id }: any) {
 
 function* addingHero({ payload: newHero }: any) {
   try {
-    const { data } = yield call(postHero, newHero);
+    const { data } = yield call(postHeroAxios, newHero);
     yield put({ type: HeroActionTypes.ADD_HERO_SUCCESS, payload: data });
   } catch (e) {
     console.log(e.message);

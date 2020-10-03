@@ -1,20 +1,21 @@
 import React, { useEffect } from 'react';
-import { Dispatch } from 'redux';
 import { useDispatch, useSelector } from 'react-redux';
 import { fetchHeroes, removeHero } from '../hero-actions';
-import { IApplicationState } from '../../../store';
 import Button from 'react-bootstrap/Button';
 import HeroForm from '../components/HeroForm';
+import { getAntiHeroesAction } from '../../anti-heroes/anti-hero.actions';
+import { IApplicationState } from '../../../store/reducers';
 
 type Props = {};
 
 const Heroes: React.FC<Props> = () => {
-  const dispatch: Dispatch = useDispatch();
+  const dispatch = useDispatch();
   const { heroes, isLoading } = useSelector(
     (state: IApplicationState) => state.heroReducer,
   );
 
   useEffect(() => {
+    dispatch(getAntiHeroesAction());
     dispatch(fetchHeroes());
   }, []);
 

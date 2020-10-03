@@ -2,26 +2,43 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d96609fc-7c17-4ab9-ab20-5548470e4ce9" name="Default Changelist" comment="updated">
+      <change afterPath="$PROJECT_DIR$/src/axios-http-client/api-config.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/axios-http-client/generic-api-calls.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/features/anti-heroes/anti-hero.actions.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/features/anti-heroes/anti-hero.slice.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/features/anti-heroes/anti-hero.types.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/store/configureStore.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/store/reducers.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/store/types/RootState.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/store/types/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/store/types/injector-typings.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/features/heroes/components/HeroForm.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/heroes/components/HeroForm.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/features/heroes/hero-actions.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/heroes/hero-actions.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/features/heroes/hero-reducer.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/heroes/hero-reducer.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.json" beforeDir="false" afterPath="$PROJECT_DIR$/db.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Router.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Router.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/features/heroes/hero-saga.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/heroes/hero-saga.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/features/heroes/hero-service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/heroes/hero-service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/features/heroes/hero-types.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/heroes/hero-types.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/features/heroes/pages/EditHero.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/heroes/pages/EditHero.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/features/villains/components/VillainForm.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/villains/components/VillainForm.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/features/villains/pages/EditVillain.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/villains/pages/EditVillain.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/features/heroes/pages/Heroes.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/heroes/pages/Heroes.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/features/villains/pages/Villains.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/villains/pages/Villains.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/features/villains/villain-actions.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/villains/villain-actions.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/features/villains/villain-reducer.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/villains/villain-reducer.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/features/villains/villain-service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/villains/villain-service.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/features/villains/villain-types.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/villains/villain-types.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/index.ts" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="TypeScript File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -47,6 +64,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="TF_FMT" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/features/anti-heroes" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.path.for.package.standard" value="project" />
@@ -61,6 +79,14 @@
     <property name="ts.external.directory.path" value="C:\Development\TourOfHeroes\Frontend\Reactjs\react-redux-typescript\node_modules\typescript\lib" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Development\TourOfHeroes\Frontend\Reactjs\react-redux-typescript\src\store\types" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Development\TourOfHeroes\Frontend\Reactjs\react-redux-typescript\src\features\anti-heroes" />
+    </key>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration>C:\Users\Webmaster\AppData\Roaming\Subversion</configuration>
@@ -72,7 +98,9 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1601719051796</updated>
-      <workItem from="1601719054043" duration="2865000" />
+      <workItem from="1601719054043" duration="6760000" />
+      <workItem from="1601727640224" duration="1523000" />
+      <workItem from="1601729190522" duration="3069000" />
     </task>
     <task id="LOCAL-00001" summary="updated">
       <created>1601719602382</created>
@@ -88,7 +116,14 @@
       <option name="project" value="LOCAL" />
       <updated>1601719675849</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="updated">
+      <created>1601722175916</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1601722175916</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TerminalProjectNonSharedOptionsProvider">
@@ -109,14 +144,14 @@
       <screen x="3840" y="0" width="2560" height="1400" />
     </state>
     <state x="4826" y="474" key="#com.intellij.fileTypes.FileTypeChooser/3840.0.2560.1400/0.0.2560.1400@3840.0.2560.1400" timestamp="1601719353124" />
-    <state x="4879" y="348" key="#com.intellij.ide.util.MemberChooser" timestamp="1601720826588">
+    <state x="4879" y="348" key="#com.intellij.ide.util.MemberChooser" timestamp="1601727790324">
       <screen x="3840" y="0" width="2560" height="1400" />
     </state>
-    <state x="4879" y="348" key="#com.intellij.ide.util.MemberChooser/3840.0.2560.1400/0.0.2560.1400@3840.0.2560.1400" timestamp="1601720826588" />
-    <state x="4416" y="104" key="CommitChangelistDialog2" timestamp="1601720027736">
+    <state x="4879" y="348" key="#com.intellij.ide.util.MemberChooser/3840.0.2560.1400/0.0.2560.1400@3840.0.2560.1400" timestamp="1601727790324" />
+    <state x="4416" y="104" key="CommitChangelistDialog2" timestamp="1601732090188">
       <screen x="3840" y="0" width="2560" height="1400" />
     </state>
-    <state x="4416" y="104" key="CommitChangelistDialog2/3840.0.2560.1400/0.0.2560.1400@3840.0.2560.1400" timestamp="1601720027736" />
+    <state x="4416" y="104" key="CommitChangelistDialog2/3840.0.2560.1400/0.0.2560.1400@3840.0.2560.1400" timestamp="1601732090188" />
     <state width="2534" height="368" key="GridCell.Tab.0.bottom" timestamp="1601719129337">
       <screen x="3840" y="0" width="2560" height="1400" />
     </state>
@@ -137,5 +172,9 @@
       <screen x="3840" y="0" width="2560" height="1400" />
     </state>
     <state x="4520" y="259" key="SettingsEditor/3840.0.2560.1400/0.0.2560.1400@3840.0.2560.1400" timestamp="1601720081803" />
+    <state x="4613" y="364" key="Vcs.Push.Dialog.v2" timestamp="1601722179139">
+      <screen x="3840" y="0" width="2560" height="1400" />
+    </state>
+    <state x="4613" y="364" key="Vcs.Push.Dialog.v2/3840.0.2560.1400/0.0.2560.1400@3840.0.2560.1400" timestamp="1601722179139" />
   </component>
 </project>

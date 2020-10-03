@@ -2,9 +2,9 @@ import React, { useEffect } from 'react';
 import { Dispatch } from 'redux';
 import { useDispatch, useSelector } from 'react-redux';
 import { fetchVillains, removeVillain } from '../villain-actions';
-import { IApplicationState } from '../../../store';
 import Button from 'react-bootstrap/Button';
 import VillainForm from '../components/VillainForm';
+import { IApplicationState } from '../../../store/reducers';
 
 type Props = {};
 

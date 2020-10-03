@@ -1,4 +1,4 @@
-export type VillainStateModel = {
+export type VillainStateType = {
   readonly villains: VillainModel[];
   readonly villain: VillainModel;
   readonly isLoading: boolean;

@@ -2,12 +2,15 @@ import React from 'react';
 import { BrowserRouter, Link } from 'react-router-dom';
 import Router from './Router';
 import { Provider } from 'react-redux';
-import store from './store';
+
 import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
 import { style } from 'typestyle';
+import { configureAppStore } from './store/configureStore';
 
 const App: React.FC = () => {
+  const store = configureAppStore();
+
   return (
     <Provider store={store}>
       <BrowserRouter>

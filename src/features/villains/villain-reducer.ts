@@ -1,6 +1,6 @@
-import { VillainStateModel, VillainActionTypes } from './villain-types';
+import { VillainStateType, VillainActionTypes } from './villain-types';
 
-const initialState: VillainStateModel = {
+const initialState: VillainStateType = {
   villains: [],
   villain: {
     id: '',
@@ -19,9 +19,9 @@ type IAction = {
 };
 
 export const villainReducer = (
-  state: VillainStateModel = initialState,
+  state: VillainStateType = initialState,
   action: IAction,
-): VillainStateModel => {
+): VillainStateType => {
   switch (action.type) {
     case VillainActionTypes.FETCH_VILLAINS_REQUEST:
       return { ...state, isLoading: true };

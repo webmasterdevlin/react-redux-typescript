@@ -1,11 +1,7 @@
-import axios from 'axios';
 import { HeroModel } from './hero-types';
+import { api } from '../../axios-http-client/api-config';
 
-const api = axios.create({
-  baseURL: 'http://localhost:5000/',
-});
-
-export async function getHeroes() {
+export async function getHeroesAxios() {
   return await api.get<HeroModel[]>('heroes');
 }
 
@@ -13,7 +9,7 @@ export async function deleteHero(id: string) {
   return await api.delete<void>('heroes/' + id);
 }
 
-export async function postHero(newHero: HeroModel) {
+export async function postHeroAxios(newHero: HeroModel) {
   return await api.post<HeroModel>('heroes', newHero);
 }
 

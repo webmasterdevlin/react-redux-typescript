@@ -1,22 +1,18 @@
-import axios from 'axios';
 import { VillainModel } from './villain-types';
+import { api } from '../../axios-http-client/api-config';
 
-const api = axios.create({
-  baseURL: 'http://localhost:5000/',
-});
-
-export async function getVillains() {
+export async function getVillainsAxios() {
   return await api.get<VillainModel[]>('villains');
 }
 
-export async function deleteVillain(id: string) {
+export async function deleteVillainAxios(id: string) {
   return await api.delete<void>('villains/' + id);
 }
 
-export async function postVillain(newVillain: VillainModel) {
+export async function postVillainAxios(newVillain: VillainModel) {
   return await api.post<VillainModel>('villains', newVillain);
 }
 
-export async function putVillain(updateVillain: VillainModel) {
+export async function putVillainAxios(updateVillain: VillainModel) {
   return await api.put<void>('villains', updateVillain);
 }

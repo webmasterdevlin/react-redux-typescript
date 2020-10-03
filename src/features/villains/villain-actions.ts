@@ -1,8 +1,8 @@
 import {
-  getVillains,
-  deleteVillain,
-  postVillain,
-  putVillain,
+  getVillainsAxios,
+  deleteVillainAxios,
+  postVillainAxios,
+  putVillainAxios,
 } from './villain-service';
 import { Dispatch, ActionCreator } from 'redux';
 import { VillainModel, VillainActionTypes } from './villain-types';
@@ -13,7 +13,7 @@ export const fetchVillains: ActionCreator<any> = () => {
     dispatch({ type: VillainActionTypes.FETCH_VILLAINS_REQUEST });
 
     try {
-      const { data } = await getVillains();
+      const { data } = await getVillainsAxios();
       dispatch({
         type: VillainActionTypes.FETCH_VILLAINS_SUCCESS,
         payload: data,
@@ -34,7 +34,7 @@ export const removeVillain: ActionCreator<any> = (id: string) => {
     });
 
     try {
-      await deleteVillain(id);
+      await deleteVillainAxios(id);
       dispatch({
         type: VillainActionTypes.REMOVE_VILLAIN_SUCCESS,
         payload: id,
@@ -55,7 +55,7 @@ export const addVillain: ActionCreator<any> = (villain: VillainModel) => {
     });
 
     try {
-      const { data } = await postVillain(villain);
+      const { data } = await postVillainAxios(villain);
       dispatch({ type: VillainActionTypes.ADD_VILLAIN_SUCCESS, payload: data });
     } catch (e) {
       dispatch({
@@ -73,7 +73,7 @@ export const updateVillain: ActionCreator<any> = (villain: VillainModel) => {
     });
 
     try {
-      await putVillain(villain);
+      await putVillainAxios(villain);
       dispatch({
         type: VillainActionTypes.UPDATE_VILLAIN_SUCCESS,
         payload: villain,
