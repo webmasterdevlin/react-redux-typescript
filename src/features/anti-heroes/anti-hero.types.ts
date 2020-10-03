@@ -15,21 +15,13 @@ export type AntiHeroModel = {
   knownAs: string;
 } & ApiResponse;
 
+export const antiHeroNamespace = 'antiHero';
+
 /* action types */
-export const HeroActionTypes = {
-  FETCH_HEROES_REQUEST: '@@/hero/FETCH_HEROES_REQUEST',
-  FETCH_HEROES_SUCCESS: '@@/hero/FETCH_HEROES_SUCCESS',
-  FETCH_HEROES_FAIL: '@@/hero/FETCH_HEROES_FAIL',
-
-  REMOVE_HERO_REQUEST: '@@/hero/REMOVE_HERO_REQUEST',
-  REMOVE_HERO_SUCCESS: '@@/hero/REMOVE_HERO_SUCCESS',
-  REMOVE_HERO_FAIL: '@@/hero/REMOVE_HERO_FAIL',
-
-  ADD_HERO_REQUEST: '@@/hero/ADD_HERO_REQUEST',
-  ADD_HERO_SUCCESS: '@@/hero/ADD_HERO_SUCCESS',
-  ADD_HERO_FAIL: '@@/hero/ADD_HERO_FAIL',
-
-  UPDATE_HERO_REQUEST: '@@/hero/UPDATE_HERO_REQUEST',
-  UPDATE_HERO_SUCCESS: '@@/hero/UPDATE_HERO_SUCCESS',
-  UPDATE_HERO_FAIL: '@@/hero/UPDATE_HERO_FAIL',
+export const AntiHeroActionTypes = {
+  FETCH_ANTI_HEROES: `@@/${antiHeroNamespace}/FETCH_ANTI_HEROES`,
+  FETCH_ANTI_HERO_By_ID: `@@/${antiHeroNamespace}/FETCH_ANTI_HEROES_By_ID`,
+  REMOVE_ANTI_HERO: `@@/${antiHeroNamespace}/REMOVE_ANTI_HERO`,
+  ADD_ANTI_HERO: `@@/${antiHeroNamespace}/ADD_ANTI_HERO`,
+  UPDATE_ANTI_HERO: `@@/${antiHeroNamespace}/UPDATE_ANTI_HERO`,
 };

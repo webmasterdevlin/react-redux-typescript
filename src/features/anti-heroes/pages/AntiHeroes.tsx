@@ -1,24 +1,29 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import Button from 'react-bootstrap/Button';
 import AntiHeroForm from '../components/AntiHeroForm';
-import { getAntiHeroesAction } from '../anti-hero.actions';
+import {
+  deleteAntiHeroAction,
+  getAntiHeroesAction,
+} from '../anti-hero.async.actions';
 import { removeTemporarily } from '../anti-hero.slice';
 import { RootState } from '../../../store/reducers';
-import { selectAntiHeroList } from '../anti-hero.selectors';
 
 type Props = {};
 
 const AntiHeroes: React.FC<Props> = () => {
   const dispatch = useDispatch();
 
-  const { loading } = useSelector((state: RootState) => state.antiHero);
-  /*or*/
-  const antiHeroes = useSelector(selectAntiHeroList);
+  const { loading, antiHeroes } = useSelector(
+    (state: RootState) => state.antiHero,
+  );
+
+  /*Redux Toolkit implementation*/
+  // const antiHeroes = useSelector(selectAntiHeroList);
 
   useEffect(() => {
     dispatch(getAntiHeroesAction());
-  }, []);
+  }, [dispatch]);
 
   return (
     <div>
@@ -36,12 +41,20 @@ const AntiHeroes: React.FC<Props> = () => {
               }
             >
               <span>{`${ah.firstName} ${ah.lastName} is ${ah.knownAs}`}</span>
-              <Button
-                onClick={() => dispatch(removeTemporarily(ah.id))}
-                variant="danger"
-              >
-                Remove
-              </Button>
+              <div>
+                <Button
+                  onClick={() => dispatch(removeTemporarily(ah.id))}
+                  variant="outline-danger"
+                >
+                  Remove
+                </Button>{' '}
+                <Button
+                  onClick={() => dispatch(deleteAntiHeroAction(ah.id))}
+                  variant="danger"
+                >
+                  Remove
+                </Button>
+              </div>
             </li>
           ))
         )}

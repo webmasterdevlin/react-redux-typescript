@@ -32,15 +32,15 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d96609fc-7c17-4ab9-ab20-5548470e4ce9" name="Default Changelist" comment="added selector">
-      <change afterPath="$PROJECT_DIR$/src/features/anti-heroes/anti-hero.selectors.ts" afterDir="false" />
+    <list default="true" id="d96609fc-7c17-4ab9-ab20-5548470e4ce9" name="Default Changelist" comment="updated">
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/axios-http-client/generic-api-calls.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/axios-http-client/generic-api-calls.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/features/anti-heroes/anti-hero.actions.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/anti-heroes/anti-hero.async.actions.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/features/anti-heroes/anti-hero.selectors.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/anti-heroes/anti-hero.selectors.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/features/anti-heroes/anti-hero.slice.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/anti-heroes/anti-hero.slice.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/features/anti-heroes/anti-hero.types.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/anti-heroes/anti-hero.types.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/features/anti-heroes/pages/AntiHeroes.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/anti-heroes/pages/AntiHeroes.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/reducers.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/reducers.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/types/RootState.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/types/index.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/types/injector-typings.ts" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -81,16 +81,20 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/src/features/anti-heroes" />
     <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.standard" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.path.for.package.standard" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.standard" value="" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="prettierjs.PrettierConfiguration.Package" value="C:\Users\devduldu\AppData\Roaming\npm\node_modules\prettier" />
     <property name="run.prettier.on.save" value="true" />
-    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.CommitDialog" />
+    <property name="settings.editor.selected.configurable" value="settings.javascript.linters.eslint" />
     <property name="ts.external.directory.path" value="C:\Development\TourOfHeroes\Frontend\Reactjs\react-redux-typescript\node_modules\typescript\lib" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
@@ -115,7 +119,7 @@
       <updated>1601719051796</updated>
       <workItem from="1601719054043" duration="6760000" />
       <workItem from="1601727640224" duration="1523000" />
-      <workItem from="1601729190522" duration="12545000" />
+      <workItem from="1601729190522" duration="19375000" />
     </task>
     <task id="LOCAL-00001" summary="updated">
       <created>1601719602382</created>
@@ -145,7 +149,14 @@
       <option name="project" value="LOCAL" />
       <updated>1601732414582</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="updated">
+      <created>1601742101266</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1601742101266</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TerminalProjectNonSharedOptionsProvider">
@@ -169,10 +180,10 @@
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="updated" />
     <MESSAGE value="added anti-hero reducer" />
     <MESSAGE value="added selector" />
-    <option name="LAST_COMMIT_MESSAGE" value="added selector" />
+    <MESSAGE value="updated" />
+    <option name="LAST_COMMIT_MESSAGE" value="updated" />
   </component>
   <component name="WindowStateProjectService">
     <state x="4815" y="478" key="#Notifications" timestamp="1601738689874">
@@ -187,10 +198,10 @@
       <screen x="3840" y="0" width="2560" height="1400" />
     </state>
     <state x="4879" y="348" key="#com.intellij.ide.util.MemberChooser/3840.0.2560.1400/0.0.2560.1400@3840.0.2560.1400" timestamp="1601727790324" />
-    <state x="4416" y="104" key="CommitChangelistDialog2" timestamp="1601741506161">
+    <state x="4416" y="104" width="1715" height="1193" key="CommitChangelistDialog2" timestamp="1601751764657">
       <screen x="3840" y="0" width="2560" height="1400" />
     </state>
-    <state x="4416" y="104" key="CommitChangelistDialog2/3840.0.2560.1400/0.0.2560.1400@3840.0.2560.1400" timestamp="1601741506161" />
+    <state x="4416" y="104" width="1715" height="1193" key="CommitChangelistDialog2/3840.0.2560.1400/0.0.2560.1400@3840.0.2560.1400" timestamp="1601751764657" />
     <state width="2534" height="368" key="GridCell.Tab.0.bottom" timestamp="1601719129337">
       <screen x="3840" y="0" width="2560" height="1400" />
     </state>
@@ -207,17 +218,21 @@
       <screen x="3840" y="0" width="2560" height="1400" />
     </state>
     <state width="2534" height="368" key="GridCell.Tab.0.right/3840.0.2560.1400/0.0.2560.1400@3840.0.2560.1400" timestamp="1601719129337" />
-    <state x="4589" y="228" key="RollbackChangesDialog" timestamp="1601734285031">
+    <state x="4589" y="228" key="RollbackChangesDialog" timestamp="1601742216544">
       <screen x="3840" y="0" width="2560" height="1400" />
     </state>
-    <state x="4589" y="228" key="RollbackChangesDialog/3840.0.2560.1400/0.0.2560.1400@3840.0.2560.1400" timestamp="1601734285031" />
-    <state x="4520" y="259" key="SettingsEditor" timestamp="1601720081803">
+    <state x="4589" y="228" key="RollbackChangesDialog/3840.0.2560.1400/0.0.2560.1400@3840.0.2560.1400" timestamp="1601742216544" />
+    <state x="4520" y="259" key="SettingsEditor" timestamp="1601750258995">
       <screen x="3840" y="0" width="2560" height="1400" />
     </state>
-    <state x="4520" y="259" key="SettingsEditor/3840.0.2560.1400/0.0.2560.1400@3840.0.2560.1400" timestamp="1601720081803" />
-    <state x="4613" y="364" key="Vcs.Push.Dialog.v2" timestamp="1601732498073">
+    <state x="4520" y="259" key="SettingsEditor/3840.0.2560.1400/0.0.2560.1400@3840.0.2560.1400" timestamp="1601750258995" />
+    <state x="4613" y="364" key="Vcs.Push.Dialog.v2" timestamp="1601742104609">
       <screen x="3840" y="0" width="2560" height="1400" />
     </state>
-    <state x="4613" y="364" key="Vcs.Push.Dialog.v2/3840.0.2560.1400/0.0.2560.1400@3840.0.2560.1400" timestamp="1601732498073" />
+    <state x="4613" y="364" key="Vcs.Push.Dialog.v2/3840.0.2560.1400/0.0.2560.1400@3840.0.2560.1400" timestamp="1601742104609" />
+    <state x="4761" y="355" width="718" height="690" key="find.popup" timestamp="1601742711866">
+      <screen x="3840" y="0" width="2560" height="1400" />
+    </state>
+    <state x="4761" y="355" width="718" height="690" key="find.popup/3840.0.2560.1400/0.0.2560.1400@3840.0.2560.1400" timestamp="1601742711866" />
   </component>
 </project>
