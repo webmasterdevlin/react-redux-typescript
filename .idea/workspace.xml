@@ -1,41 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d96609fc-7c17-4ab9-ab20-5548470e4ce9" name="Default Changelist" comment="updated">
-      <change afterPath="$PROJECT_DIR$/.huskyrc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/prettier.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.lintstagedrc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.prettierrc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/features/heroes/pages/Heroes.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/$CACHE_FILE$" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/devlinduldulao.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/react-redux-typescript.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/react-redux-typescript.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/watcherTasks.xml" beforeDir="false" />
+    <list default="true" id="d96609fc-7c17-4ab9-ab20-5548470e4ce9" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Router.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Router.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/heroes/components/HeroForm.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/heroes/components/HeroForm.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/heroes/hero-actions.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/heroes/hero-actions.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/heroes/hero-reducer.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/heroes/hero-reducer.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/heroes/hero-saga.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/heroes/hero-saga.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/heroes/hero-service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/heroes/hero-service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/heroes/hero-types.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/heroes/hero-types.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/heroes/pages/EditHero.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/heroes/pages/EditHero.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/heroes/pages/Heroes.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/villains/components/VillainForm.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/villains/components/VillainForm.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/villains/pages/EditVillain.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/villains/pages/EditVillain.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/villains/pages/Villains.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/villains/pages/Villains.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/villains/villain-actions.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/villains/villain-actions.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/villains/villain-reducer.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/villains/villain-reducer.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/villains/villain-service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/villains/villain-service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/villains/villain-types.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/villains/villain-types.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.prettierrc" beforeDir="false" afterPath="$PROJECT_DIR$/.prettierrc" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -91,8 +59,16 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1601719051796</updated>
-      <workItem from="1601719054043" duration="527000" />
+      <workItem from="1601719054043" duration="597000" />
     </task>
+    <task id="LOCAL-00001" summary="updated">
+      <created>1601719602382</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1601719602382</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TerminalProjectNonSharedOptionsProvider">
@@ -113,10 +89,10 @@
       <screen x="3840" y="0" width="2560" height="1400" />
     </state>
     <state x="4826" y="474" key="#com.intellij.fileTypes.FileTypeChooser/3840.0.2560.1400/0.0.2560.1400@3840.0.2560.1400" timestamp="1601719353124" />
-    <state x="4416" y="104" key="CommitChangelistDialog2" timestamp="1601719574659">
+    <state x="4416" y="104" key="CommitChangelistDialog2" timestamp="1601719594596">
       <screen x="3840" y="0" width="2560" height="1400" />
     </state>
-    <state x="4416" y="104" key="CommitChangelistDialog2/3840.0.2560.1400/0.0.2560.1400@3840.0.2560.1400" timestamp="1601719574659" />
+    <state x="4416" y="104" key="CommitChangelistDialog2/3840.0.2560.1400/0.0.2560.1400@3840.0.2560.1400" timestamp="1601719594596" />
     <state width="2534" height="368" key="GridCell.Tab.0.bottom" timestamp="1601719129337">
       <screen x="3840" y="0" width="2560" height="1400" />
     </state>
