@@ -30,6 +30,12 @@ export const heroReducer = (
     case HeroActionTypes.FETCH_HEROES_FAIL:
       return { ...state, isLoading: false, error: action.payload };
 
+    case HeroActionTypes.REMOVE_HERO_TEMPORARY:
+      return {
+        ...state,
+        heroes: state.heroes.filter(hero => hero.id !== action.payload),
+      };
+
     case HeroActionTypes.REMOVE_HERO_REQUEST:
       return { ...state, isLoading: true };
     case HeroActionTypes.REMOVE_HERO_SUCCESS:

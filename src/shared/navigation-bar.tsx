@@ -9,17 +9,17 @@ const NavigationBar = () => (
     <Nav className="mr-auto">
       <Nav.Link>
         <Link className={navStyle} to={'heroes'}>
-          Heroes
+          Saga
         </Link>
       </Nav.Link>
       <Nav.Link>
         <Link className={navStyle} to={'villains'}>
-          Villains
+          Thunk
         </Link>
       </Nav.Link>
       <Nav.Link>
         <Link className={navStyle} to={'anti-heroes'}>
-          Anti-Heroes
+          Redux Toolkit
         </Link>
       </Nav.Link>
     </Nav>

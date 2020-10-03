@@ -1,11 +1,6 @@
 import { put, takeEvery, call } from 'redux-saga/effects';
 import { all } from '@redux-saga/core/effects';
-import {
-  getHeroesAxios,
-  deleteHero,
-  postHeroAxios,
-  putHero,
-} from './hero-service';
+import { getHeroesAxios, deleteHero, postHeroAxios } from './hero-service';
 import { HeroActionTypes } from './hero-types';
 
 /* function generator implementations of Saga */
@@ -42,21 +37,6 @@ function* addingHero({ payload: newHero }: any) {
   }
 }
 
-function* updatingHero({ payload: updatedHero }: any) {
-  try {
-    yield call(putHero, updatedHero);
-    yield put({
-      type: HeroActionTypes.UPDATE_HERO_SUCCESS,
-      payload: updatedHero,
-    });
-  } catch (e) {
-    yield put({
-      type: HeroActionTypes.UPDATE_HERO_FAIL,
-      payload: e.message,
-    });
-  }
-}
-
 /* Saga watches the actions */
 function* watchFetchingHeroes() {
   yield takeEvery(HeroActionTypes.FETCH_HEROES_REQUEST, fetchingHeroes);
@@ -70,16 +50,7 @@ function* watchAddingHero() {
   yield takeEvery(HeroActionTypes.ADD_HERO_REQUEST, addingHero);
 }
 
-function* watchUpdatingHero() {
-  yield takeEvery(HeroActionTypes.UPDATE_HERO_REQUEST, updatingHero);
-}
-
 /* Saga sends all the watchers to the sagaMiddleware to run. */
 export function* heroSaga() {
-  yield all([
-    watchFetchingHeroes(),
-    watchRemovingHero(),
-    watchAddingHero(),
-    watchUpdatingHero(),
-  ]);
+  yield all([watchFetchingHeroes(), watchRemovingHero(), watchAddingHero()]);
 }

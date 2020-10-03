@@ -6,16 +6,15 @@ import { initialState } from './anti-hero.slice';
 const selectDomain = (state: RootState) => state.antiHero || initialState;
 
 /*
-The classic way of using Selectors is better than this.
-This is too much. I don't recommend this. Just use useSelector
+    For Computing Derived Data
 */
 
-export const selectAntiHeroList = createSelector(
+export const selectAThing = createSelector(
   [selectDomain],
-  antiHeroState => antiHeroState.antiHeroes,
+  antiHeroState => antiHeroState.entities,
 );
 
-export const selectLoading = createSelector(
+export const selectSomething = createSelector(
   [selectDomain],
-  antiHeroState => antiHeroState.loading,
+  antiHeroState => antiHeroState.ids.length,
 );

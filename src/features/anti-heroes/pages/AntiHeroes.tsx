@@ -6,9 +6,10 @@ import {
   deleteAntiHeroAction,
   getAntiHeroesAction,
 } from '../anti-hero.async.actions';
-import { removeTemporarily } from '../anti-hero.slice';
+import { removeAntiHeroByIdTemporaryAction } from '../anti-hero.slice';
 import { RootState } from '../../../store/reducers';
 import TitleBar from '../../../shared/title-bar';
+import UpdateUiLabel from '../../../shared/update-ui-label';
 
 type Props = {};
 
@@ -29,6 +30,7 @@ const AntiHeroes: React.FC<Props> = () => {
     <div>
       <TitleBar title={'Anti Heroes - Redux Toolkit'} />
       <AntiHeroForm />
+
       <ul className={'mt-5 list-group'}>
         {loading ? (
           <h2>Loading.. Please wait..</h2>
@@ -49,7 +51,9 @@ const AntiHeroes: React.FC<Props> = () => {
                   Mark
                 </Button>{' '}
                 <Button
-                  onClick={() => dispatch(removeTemporarily(ah.id))}
+                  onClick={() =>
+                    dispatch(removeAntiHeroByIdTemporaryAction(ah.id))
+                  }
                   variant="outline-danger"
                 >
                   Remove
@@ -65,6 +69,7 @@ const AntiHeroes: React.FC<Props> = () => {
           ))
         )}
       </ul>
+      <UpdateUiLabel />
       {antiHeroes.length === 0 && !loading && (
         <Button
           variant={'info'}

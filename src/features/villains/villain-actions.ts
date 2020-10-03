@@ -1,15 +1,26 @@
-import { Dispatch, ActionCreator } from 'redux';
+import { Dispatch, ActionCreator, Action } from 'redux';
 import { VillainModel, VillainActionTypes } from './villain-types';
 import {
   deleteAxios,
   getAxios,
   postAxios,
-  putAxios,
 } from '../../axios-http-client/generic-api-calls';
 import { EndPoints } from '../../axios-http-client/api-config';
 
-/* action creators */
-export const fetchVillains: ActionCreator<any> = () => {
+type ActionType = {
+  readonly payload?: any;
+} & Action;
+
+/*non-async action creators*/
+export const removeVillainTemporaryAction = (id: string): ActionType => {
+  return {
+    type: VillainActionTypes.REMOVE_VILLAIN_TEMPORARY,
+    payload: id,
+  };
+};
+
+/* async action creators */
+export const getVillainsAction: ActionCreator<any> = () => {
   return async (dispatch: Dispatch) => {
     dispatch({ type: VillainActionTypes.FETCH_VILLAINS_REQUEST });
 
@@ -28,7 +39,7 @@ export const fetchVillains: ActionCreator<any> = () => {
   };
 };
 
-export const removeVillain: ActionCreator<any> = (id: string) => {
+export const deleteVillainByIdAction: ActionCreator<any> = (id: string) => {
   return async (dispatch: Dispatch) => {
     dispatch({
       type: VillainActionTypes.REMOVE_VILLAIN_REQUEST,
@@ -49,7 +60,9 @@ export const removeVillain: ActionCreator<any> = (id: string) => {
   };
 };
 
-export const addVillain: ActionCreator<any> = (villain: VillainModel) => {
+export const postVillainAction: ActionCreator<any> = (
+  villain: VillainModel,
+) => {
   return async (dispatch: Dispatch) => {
     dispatch({
       type: VillainActionTypes.ADD_VILLAIN_REQUEST,
@@ -64,30 +77,6 @@ export const addVillain: ActionCreator<any> = (villain: VillainModel) => {
     } catch (e) {
       dispatch({
         type: VillainActionTypes.ADD_VILLAIN_FAIL,
-        payload: e.message,
-      });
-    }
-  };
-};
-
-export const updateVillain: ActionCreator<any> = (
-  id: string,
-  villain: VillainModel,
-) => {
-  return async (dispatch: Dispatch) => {
-    dispatch({
-      type: VillainActionTypes.UPDATE_VILLAIN_REQUEST,
-    });
-
-    try {
-      await putAxios<void, VillainModel>(EndPoints.villains, id, villain);
-      dispatch({
-        type: VillainActionTypes.UPDATE_VILLAIN_SUCCESS,
-        payload: villain,
-      });
-    } catch (e) {
-      dispatch({
-        type: VillainActionTypes.UPDATE_VILLAIN_FAIL,
         payload: e.message,
       });
     }

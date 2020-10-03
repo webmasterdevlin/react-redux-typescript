@@ -14,22 +14,21 @@ export type HeroModel = {
   house: string;
   knownAs: string;
 };
+export const heroNamespace = 'hero';
 
 /* action types */
 export const HeroActionTypes = {
-  FETCH_HEROES_REQUEST: '@@/hero/FETCH_HEROES_REQUEST',
-  FETCH_HEROES_SUCCESS: '@@/hero/FETCH_HEROES_SUCCESS',
-  FETCH_HEROES_FAIL: '@@/hero/FETCH_HEROES_FAIL',
+  FETCH_HEROES_REQUEST: `@@/${heroNamespace}/FETCH_HEROES_REQUEST`,
+  FETCH_HEROES_SUCCESS: `@@/${heroNamespace}/FETCH_HEROES_SUCCESS`,
+  FETCH_HEROES_FAIL: `@@/${heroNamespace}/FETCH_HEROES_FAIL`,
 
-  REMOVE_HERO_REQUEST: '@@/hero/REMOVE_HERO_REQUEST',
-  REMOVE_HERO_SUCCESS: '@@/hero/REMOVE_HERO_SUCCESS',
-  REMOVE_HERO_FAIL: '@@/hero/REMOVE_HERO_FAIL',
+  REMOVE_HERO_TEMPORARY: `@@/${heroNamespace}/REMOVE_HERO_TEMPORARY`,
 
-  ADD_HERO_REQUEST: '@@/hero/ADD_HERO_REQUEST',
-  ADD_HERO_SUCCESS: '@@/hero/ADD_HERO_SUCCESS',
-  ADD_HERO_FAIL: '@@/hero/ADD_HERO_FAIL',
+  REMOVE_HERO_REQUEST: `@@/${heroNamespace}/REMOVE_HERO_REQUEST`,
+  REMOVE_HERO_SUCCESS: `@@/${heroNamespace}/REMOVE_HERO_SUCCESS`,
+  REMOVE_HERO_FAIL: `@@/${heroNamespace}/REMOVE_HERO_FAIL`,
 
-  UPDATE_HERO_REQUEST: '@@/hero/UPDATE_HERO_REQUEST',
-  UPDATE_HERO_SUCCESS: '@@/hero/UPDATE_HERO_SUCCESS',
-  UPDATE_HERO_FAIL: '@@/hero/UPDATE_HERO_FAIL',
+  ADD_HERO_REQUEST: `@@/${heroNamespace}/ADD_HERO_REQUEST`,
+  ADD_HERO_SUCCESS: `@@/${heroNamespace}/ADD_HERO_SUCCESS`,
+  ADD_HERO_FAIL: `@@/${heroNamespace}/ADD_HERO_FAIL`,
 };

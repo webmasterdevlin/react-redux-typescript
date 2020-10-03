@@ -35,7 +35,10 @@ export const antiHeroesSlice = createSlice({
   initialState,
   // mutate using non-asynchronous actions
   reducers: {
-    removeTemporarily: (state, action: PayloadAction<string>) => {
+    removeAntiHeroByIdTemporaryAction: (
+      state,
+      action: PayloadAction<string>,
+    ) => {
       state.antiHeroes = state.antiHeroes.filter(
         ah => ah.id !== action.payload,
       );
@@ -80,6 +83,6 @@ export const antiHeroesSlice = createSlice({
   },
 });
 
-export const { removeTemporarily } = antiHeroesSlice.actions;
+export const { removeAntiHeroByIdTemporaryAction } = antiHeroesSlice.actions;
 
 export default antiHeroesSlice.reducer;

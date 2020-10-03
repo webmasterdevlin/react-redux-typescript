@@ -1,11 +1,17 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Dispatch } from 'redux';
 import { useDispatch, useSelector } from 'react-redux';
-import { fetchVillains, removeVillain } from '../villain-actions';
+import {
+  getVillainsAction,
+  deleteVillainByIdAction,
+  removeVillainTemporaryAction,
+} from '../villain-actions';
 import Button from 'react-bootstrap/Button';
 import VillainForm from '../components/VillainForm';
 import { ApplicationStateType } from '../../../store/reducers';
 import TitleBar from '../../../shared/title-bar';
+import { getAntiHeroesAction } from '../../anti-heroes/anti-hero.async.actions';
+import UpdateUiLabel from '../../../shared/update-ui-label';
 
 type Props = {};
 
@@ -14,9 +20,10 @@ const Villains: React.FC<Props> = () => {
   const { villains, isLoading } = useSelector(
     (state: ApplicationStateType) => state.villain,
   );
+  const [counter, setCounter] = useState('0');
 
   useEffect(() => {
-    dispatch(fetchVillains());
+    dispatch(getVillainsAction());
   }, []);
 
   return (
@@ -36,10 +43,20 @@ const Villains: React.FC<Props> = () => {
             >
               <div>
                 <span>{`${v.firstName} ${v.lastName} is ${v.knownAs}`}</span>
+                {counter === v.id && <span> - marked</span>}
               </div>
               <div>
+                <Button onClick={() => setCounter(v.id)} variant="dark">
+                  Mark
+                </Button>{' '}
                 <Button
-                  onClick={() => dispatch(removeVillain(v.id))}
+                  onClick={() => dispatch(removeVillainTemporaryAction(v.id))}
+                  variant="outline-danger"
+                >
+                  Remove
+                </Button>{' '}
+                <Button
+                  onClick={() => dispatch(deleteVillainByIdAction(v.id))}
                   variant="danger"
                 >
                   DELETE in DB
@@ -49,6 +66,12 @@ const Villains: React.FC<Props> = () => {
           ))
         )}
       </ul>
+      <UpdateUiLabel />
+      {villains.length === 0 && !isLoading && (
+        <Button variant={'info'} onClick={() => dispatch(getVillainsAction())}>
+          Re-fetch
+        </Button>
+      )}
     </div>
   );
 };

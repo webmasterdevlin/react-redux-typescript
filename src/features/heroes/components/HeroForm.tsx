@@ -1,6 +1,6 @@
 import React from 'react';
 import Button from 'react-bootstrap/Button';
-import { addHero } from '../hero-actions';
+import { postHeroAction } from '../hero-actions';
 import { useDispatch } from 'react-redux';
 import { Dispatch } from 'redux';
 import { ErrorMessage, Form, Formik } from 'formik';
@@ -20,7 +20,7 @@ const HeroForm: React.FC = () => {
       initialValues={formsInitialValue}
       validationSchema={validationSchema}
       onSubmit={(values, actions) => {
-        dispatch(addHero(values));
+        dispatch(postHeroAction(values));
         actions.resetForm();
       }}
     >

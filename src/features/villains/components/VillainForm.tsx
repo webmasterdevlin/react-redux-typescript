@@ -1,6 +1,6 @@
 import React from 'react';
 import Button from 'react-bootstrap/Button';
-import { addVillain } from '../villain-actions';
+import { postVillainAction } from '../villain-actions';
 import { useDispatch } from 'react-redux';
 import { Dispatch } from 'redux';
 import * as yup from 'yup';
@@ -20,7 +20,7 @@ const VillainForm: React.FC = () => {
       initialValues={formsInitialValue}
       validationSchema={validationSchema}
       onSubmit={(values, actions) => {
-        dispatch(addVillain(values));
+        dispatch(postVillainAction(values));
         actions.resetForm();
       }}
     >
