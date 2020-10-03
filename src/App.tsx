@@ -15,7 +15,7 @@ const App: React.FC = () => {
           <Navbar bg="dark" expand="lg">
             <Nav className="mr-auto">
               <Nav.Link>
-                <Link className={} to={'heroes'}>
+                <Link className={navStyle} to={'heroes'}>
                   Heroes
                 </Link>
               </Nav.Link>
