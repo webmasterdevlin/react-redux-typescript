@@ -3,6 +3,7 @@ export type AntiHeroStateType = {
   readonly antiHero: AntiHeroModel;
   readonly loading: boolean;
   readonly error: string;
+  readonly tempData?: any[];
 };
 
 export type ApiResponse = Record<string, any>;

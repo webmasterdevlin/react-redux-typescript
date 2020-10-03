@@ -27,8 +27,21 @@
       "lastName": "Quinn",
       "house": "DC",
       "knownAs": "Harley"
+    },
+    {
+      "id": "v7xSZAV",
+      "firstName": "Selina",
+      "lastName": "Kyle",
+      "house": "DC",
+      "knownAs": "Catwoman"
+    },
+    {
+      "id": "Nmla4EH",
+      "firstName": "Max",
+      "lastName": "Eisenhardt",
+      "house": "Marvel",
+      "knownAs": "Magneto"
     }
-
   ],
   "heroes": [
     {

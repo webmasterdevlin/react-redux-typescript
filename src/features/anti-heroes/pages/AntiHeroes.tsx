@@ -18,6 +18,8 @@ const AntiHeroes: React.FC<Props> = () => {
     (state: RootState) => state.antiHero,
   );
 
+  const [counter, setCounter] = useState('0');
+
   /*Redux Toolkit implementation*/
   // const antiHeroes = useSelector(selectAntiHeroList);
 
@@ -40,8 +42,14 @@ const AntiHeroes: React.FC<Props> = () => {
                 'list-group-item col-12 d-flex justify-content-between'
               }
             >
-              <span>{`${ah.firstName} ${ah.lastName} is ${ah.knownAs}`}</span>
               <div>
+                <span>{`${ah.firstName} ${ah.lastName} is ${ah.knownAs}`}</span>
+                {counter === ah.id && <span> - marked</span>}
+              </div>
+              <div>
+                <Button onClick={() => setCounter(ah.id)} variant="dark">
+                  Mark
+                </Button>{' '}
                 <Button
                   onClick={() => dispatch(removeTemporarily(ah.id))}
                   variant="outline-danger"
@@ -52,13 +60,21 @@ const AntiHeroes: React.FC<Props> = () => {
                   onClick={() => dispatch(deleteAntiHeroAction(ah.id))}
                   variant="danger"
                 >
-                  Remove
+                  DELETE in DB
                 </Button>
               </div>
             </li>
           ))
         )}
       </ul>
+      {antiHeroes.length === 0 && !loading && (
+        <Button
+          variant={'info'}
+          onClick={() => dispatch(getAntiHeroesAction())}
+        >
+          Re-fetch
+        </Button>
+      )}
     </div>
   );
 };

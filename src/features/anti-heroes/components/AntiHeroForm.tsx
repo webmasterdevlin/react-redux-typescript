@@ -9,6 +9,7 @@ import * as yup from 'yup';
 import FormB from 'react-bootstrap/Form';
 import Card from 'react-bootstrap/Card';
 import { AntiHeroModel } from '../anti-hero.types';
+import { postAntiHeroAction } from '../anti-hero.async.actions';
 
 const AntiHeroForm: React.FC = () => {
   const dispatch = useDispatch();
@@ -33,7 +34,7 @@ const AntiHeroForm: React.FC = () => {
       initialValues={newHero}
       validationSchema={validationSchema}
       onSubmit={(values, actions) => {
-        // DISPATCH HERE
+        dispatch(postAntiHeroAction(values));
         actions.resetForm();
       }}
     >
@@ -87,7 +88,7 @@ const AntiHeroForm: React.FC = () => {
               </FormB.Group>
 
               <FormB.Group>
-                <FormB.Label>Last Name</FormB.Label>
+                <FormB.Label>Known as</FormB.Label>
                 <FormB.Control
                   onChange={formikProps.handleChange('knownAs')}
                   onBlur={formikProps.handleBlur('knownAs')}
@@ -100,7 +101,12 @@ const AntiHeroForm: React.FC = () => {
                   className={'mt-2 alert alert-danger'}
                 />
               </FormB.Group>
-              <Button type="submit">Send</Button>
+              <Button
+                disabled={!formikProps.dirty || !formikProps.isValid}
+                type="submit"
+              >
+                Send
+              </Button>
             </Form>
           </Card.Body>
         </Card>

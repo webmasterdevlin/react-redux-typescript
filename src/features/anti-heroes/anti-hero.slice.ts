@@ -27,6 +27,7 @@ export const initialState = usersAdapter.getInitialState<AntiHeroStateType>({
   error: '',
   loading: false,
 });
+
 export const antiHeroesSlice = createSlice({
   // name is your (feature, module, namespace, context). The terminologies here can be interchangeable.
   name: antiHeroNamespace,
@@ -40,11 +41,10 @@ export const antiHeroesSlice = createSlice({
       );
     },
   },
+
   // mutate using asynchronous actions
   extraReducers: builder => {
-    let previousAntiHeroList: AntiHeroModel[];
-
-    /*GET ALL*/
+    /* GET ALL */
     builder.addCase(getAntiHeroesAction.pending, (state, action) => {
       state.loading = true;
     });
@@ -59,23 +59,23 @@ export const antiHeroesSlice = createSlice({
       state.loading = false;
     });
 
-    /*POST*/
+    /* POST */
     builder.addCase(postAntiHeroAction.fulfilled, (state, action) => {
       state.antiHeroes.push(action.payload);
       state.loading = false;
     });
 
-    /*DELETE*/
-    builder.addCase(deleteAntiHeroAction.pending, (state, action: any) => {
-      previousAntiHeroList = state.antiHeroes;
-      const index = state.antiHeroes.findIndex(action.payload);
+    /* DELETE */
+    builder.addCase(deleteAntiHeroAction.pending, (state, action) => {
+      state.tempData = [...state.antiHeroes];
+      state.error = '';
+      const index = state.antiHeroes.findIndex(ah => ah.id === action.meta.arg);
       state.antiHeroes.splice(index, 1);
     });
 
     builder.addCase(deleteAntiHeroAction.rejected, (state, action: any) => {
       state.error = action.error.message;
-      alert(action.error.message);
-      state.antiHeroes = previousAntiHeroList;
+      state.antiHeroes = state.tempData as AntiHeroModel[];
     });
   },
 });

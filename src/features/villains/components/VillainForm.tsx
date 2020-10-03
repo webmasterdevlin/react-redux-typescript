@@ -12,13 +12,6 @@ import FormB from 'react-bootstrap/Form';
 const VillainForm: React.FC = () => {
   const dispatch: Dispatch = useDispatch();
 
-  const [newVillain, setNewVillain] = useState<VillainModel>({
-    firstName: '',
-    lastName: '',
-    house: '',
-    knownAs: '',
-  } as VillainModel);
-
   const validationSchema = yup.object({
     firstName: yup.string().label('First Name').min(2).required(),
     lastName: yup.string().label('Last Name').min(2).required(),
@@ -28,7 +21,13 @@ const VillainForm: React.FC = () => {
 
   return (
     <Formik
-      initialValues={newVillain}
+      initialValues={{
+        id: '',
+        firstName: '',
+        lastName: '',
+        house: '',
+        knownAs: '',
+      }}
       validationSchema={validationSchema}
       onSubmit={(values, actions) => {
         dispatch(addVillain(values));
@@ -85,7 +84,7 @@ const VillainForm: React.FC = () => {
               </FormB.Group>
 
               <FormB.Group>
-                <FormB.Label>Last Name</FormB.Label>
+                <FormB.Label>Known as</FormB.Label>
                 <FormB.Control
                   onChange={formikProps.handleChange('knownAs')}
                   onBlur={formikProps.handleBlur('knownAs')}
@@ -98,7 +97,12 @@ const VillainForm: React.FC = () => {
                   className={'mt-2 alert alert-danger'}
                 />
               </FormB.Group>
-              <Button type="submit">Send</Button>
+              <Button
+                disabled={!formikProps.dirty || !formikProps.isValid}
+                type="submit"
+              >
+                Send
+              </Button>
             </Form>
           </Card.Body>
         </Card>
