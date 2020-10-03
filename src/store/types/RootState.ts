@@ -8,8 +8,15 @@
 */
 
 import { AntiHeroStateType } from '../../features/anti-heroes/anti-hero.types';
+import { heroReducer } from '../../features/heroes/hero-reducer';
+import { villainReducer } from '../../features/villains/villain-reducer';
+import { HeroStateType } from '../../features/heroes/hero-types';
+import { VillainStateType } from '../../features/villains/villain-types';
+import { AnyAction, Reducer } from 'redux';
 
 export interface RootState {
   antiHero?: AntiHeroStateType;
+  hero?: any;
+  villain?: any;
   // [INSERT NEW REDUCER KEY ABOVE] < Needed for generating containers seamlessly
 }

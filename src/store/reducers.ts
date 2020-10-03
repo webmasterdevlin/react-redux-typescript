@@ -26,8 +26,8 @@ export type ApplicationStateType = {
 export function createReducer(
   /*place all reducers here separated by commas. For example, heroReducer*/
   injectedReducers: InjectedReducersType = {
-    hero: heroReducer,
-    villain: villainReducer,
+    hero: heroReducer as any,
+    villain: villainReducer as any,
     antiHero: antiHeroesReducer,
   },
 ) {

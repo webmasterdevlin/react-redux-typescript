@@ -1,17 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d96609fc-7c17-4ab9-ab20-5548470e4ce9" name="Default Changelist" comment="added anti-hero reducer">
-      <change afterPath="$PROJECT_DIR$/src/features/anti-heroes/components/AntiHeroForm.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/features/anti-heroes/pages/AntiHeroes.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/features/anti-heroes/pages/EditAntiHero.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/shared/navigation-bar.tsx" afterDir="false" />
+    <list default="true" id="d96609fc-7c17-4ab9-ab20-5548470e4ce9" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Router.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Router.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/features/anti-heroes/anti-hero.slice.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/anti-heroes/anti-hero.slice.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/features/heroes/pages/Heroes.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/heroes/pages/Heroes.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/features/villains/pages/Villains.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/villains/pages/Villains.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/store/reducers.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/reducers.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/store/types/RootState.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/types/RootState.ts" afterDir="false" />
     </list>
@@ -88,7 +79,7 @@
       <updated>1601719051796</updated>
       <workItem from="1601719054043" duration="6760000" />
       <workItem from="1601727640224" duration="1523000" />
-      <workItem from="1601729190522" duration="8506000" />
+      <workItem from="1601729190522" duration="9215000" />
     </task>
     <task id="LOCAL-00001" summary="updated">
       <created>1601719602382</created>
@@ -133,9 +124,14 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="updated" />
     <MESSAGE value="added anti-hero reducer" />
-    <option name="LAST_COMMIT_MESSAGE" value="added anti-hero reducer" />
+    <MESSAGE value="added selector" />
+    <option name="LAST_COMMIT_MESSAGE" value="added selector" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="4815" y="478" key="#Notifications" timestamp="1601738689874">
+      <screen x="3840" y="0" width="2560" height="1400" />
+    </state>
+    <state x="4815" y="478" key="#Notifications/3840.0.2560.1400/0.0.2560.1400@3840.0.2560.1400" timestamp="1601738689874" />
     <state x="4826" y="474" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1601719353124">
       <screen x="3840" y="0" width="2560" height="1400" />
     </state>
@@ -144,10 +140,10 @@
       <screen x="3840" y="0" width="2560" height="1400" />
     </state>
     <state x="4879" y="348" key="#com.intellij.ide.util.MemberChooser/3840.0.2560.1400/0.0.2560.1400@3840.0.2560.1400" timestamp="1601727790324" />
-    <state x="4416" y="104" key="CommitChangelistDialog2" timestamp="1601737968816">
+    <state x="4416" y="104" key="CommitChangelistDialog2" timestamp="1601737989109">
       <screen x="3840" y="0" width="2560" height="1400" />
     </state>
-    <state x="4416" y="104" key="CommitChangelistDialog2/3840.0.2560.1400/0.0.2560.1400@3840.0.2560.1400" timestamp="1601737968816" />
+    <state x="4416" y="104" key="CommitChangelistDialog2/3840.0.2560.1400/0.0.2560.1400@3840.0.2560.1400" timestamp="1601737989109" />
     <state width="2534" height="368" key="GridCell.Tab.0.bottom" timestamp="1601719129337">
       <screen x="3840" y="0" width="2560" height="1400" />
     </state>
