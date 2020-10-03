@@ -2,7 +2,7 @@ import { createSlice, PayloadAction } from '@reduxjs/toolkit';
 import { getAntiHeroesAction } from './anti-hero.actions';
 import { AntiHeroStateType } from './anti-hero.types';
 
-const initialState: AntiHeroStateType = {
+export const initialState: AntiHeroStateType = {
   antiHero: {
     firstName: '',
     house: '',
@@ -17,7 +17,7 @@ const initialState: AntiHeroStateType = {
 
 export const antiHeroesSlice = createSlice({
   // name is your (feature, module, namespace, context). The terminologies here can be interchangeable.
-  name: 'anti-heroes',
+  name: '@@/anti-heroes',
   // initialState is the default value
   initialState,
   // mutate using non-asynchronous actions
@@ -32,6 +32,14 @@ export const antiHeroesSlice = createSlice({
   extraReducers: builder => {
     builder.addCase(getAntiHeroesAction.fulfilled, (state, action) => {
       state.antiHeroes = action.payload;
+      state.loading = false;
+    });
+    builder.addCase(getAntiHeroesAction.pending, (state, action) => {
+      state.loading = true;
+    });
+    builder.addCase(getAntiHeroesAction.rejected, (state, action: any) => {
+      state.error = action.payload.message;
+      state.loading = false;
     });
   },
 });
@@ -39,8 +47,12 @@ export const antiHeroesSlice = createSlice({
 export const selectAntiHeroesCount = (state: {
   antiHero: AntiHeroStateType;
 }): number => state.antiHero.antiHeroes.length;
+
 export const selectAntiHeroesList = (state: { antiHero: AntiHeroStateType }) =>
   state.antiHero.antiHeroes;
+
+export const selectLoading = (state: { antiHero: AntiHeroStateType }) =>
+  state.antiHero.loading;
 
 export const { removeTemporarily } = antiHeroesSlice.actions;
 

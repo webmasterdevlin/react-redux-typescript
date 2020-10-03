@@ -4,14 +4,14 @@ import { useDispatch, useSelector } from 'react-redux';
 import { fetchVillains, removeVillain } from '../villain-actions';
 import Button from 'react-bootstrap/Button';
 import VillainForm from '../components/VillainForm';
-import { IApplicationState } from '../../../store/reducers';
+import { ApplicationStateType } from '../../../store/reducers';
 
 type Props = {};
 
 const Villains: React.FC<Props> = () => {
   const dispatch: Dispatch = useDispatch();
   const { villains, isLoading } = useSelector(
-    (state: IApplicationState) => state.villainReducer,
+    (state: ApplicationStateType) => state.villain,
   );
 
   useEffect(() => {
