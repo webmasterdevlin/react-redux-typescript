@@ -1,33 +1,23 @@
-import React, { useState } from 'react';
+import React from 'react';
 import Button from 'react-bootstrap/Button';
 import { addVillain } from '../villain-actions';
 import { useDispatch } from 'react-redux';
-import { VillainModel } from '../villain-types';
 import { Dispatch } from 'redux';
 import * as yup from 'yup';
 import { ErrorMessage, Form, Formik } from 'formik';
 import Card from 'react-bootstrap/Card';
 import FormB from 'react-bootstrap/Form';
+import {
+  formsInitialValue,
+  validationSchema,
+} from '../../../shared/forms-initial-values';
 
 const VillainForm: React.FC = () => {
   const dispatch: Dispatch = useDispatch();
 
-  const validationSchema = yup.object({
-    firstName: yup.string().label('First Name').min(2).required(),
-    lastName: yup.string().label('Last Name').min(2).required(),
-    house: yup.string().required('required'),
-    knownAs: yup.string().required('required'),
-  });
-
   return (
     <Formik
-      initialValues={{
-        id: '',
-        firstName: '',
-        lastName: '',
-        house: '',
-        knownAs: '',
-      }}
+      initialValues={formsInitialValue}
       validationSchema={validationSchema}
       onSubmit={(values, actions) => {
         dispatch(addVillain(values));

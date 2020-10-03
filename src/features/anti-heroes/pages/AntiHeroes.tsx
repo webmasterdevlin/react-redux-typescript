@@ -8,6 +8,7 @@ import {
 } from '../anti-hero.async.actions';
 import { removeTemporarily } from '../anti-hero.slice';
 import { RootState } from '../../../store/reducers';
+import TitleBar from '../../../shared/title-bar';
 
 type Props = {};
 
@@ -20,16 +21,13 @@ const AntiHeroes: React.FC<Props> = () => {
 
   const [counter, setCounter] = useState('0');
 
-  /*Redux Toolkit implementation*/
-  // const antiHeroes = useSelector(selectAntiHeroList);
-
   useEffect(() => {
     dispatch(getAntiHeroesAction());
   }, [dispatch]);
 
   return (
     <div>
-      <h1>Anti Heroes</h1>
+      <TitleBar title={'Anti Heroes - Redux Toolkit'} />
       <AntiHeroForm />
       <ul className={'mt-5 list-group'}>
         {loading ? (

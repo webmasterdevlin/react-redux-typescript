@@ -13,14 +13,14 @@ const initialState: VillainStateType = {
   error: '',
 };
 
-type IAction = {
+type ActionType = {
   type: string;
   payload: any;
 };
 
 export const villainReducer = (
   state: VillainStateType = initialState,
-  action: IAction,
+  action: ActionType,
 ): VillainStateType => {
   switch (action.type) {
     case VillainActionTypes.FETCH_VILLAINS_REQUEST:
@@ -54,18 +54,6 @@ export const villainReducer = (
     case VillainActionTypes.ADD_VILLAIN_FAIL:
       return { ...state, isLoading: false, error: action.payload };
 
-    case VillainActionTypes.UPDATE_VILLAIN_REQUEST:
-      return { ...state, isLoading: true };
-    case VillainActionTypes.UPDATE_VILLAIN_SUCCESS:
-      return {
-        ...state,
-        isLoading: false,
-        villains: state.villains.map(villain =>
-          villain.id === action.payload.id ? action.payload : villain,
-        ),
-      };
-    case VillainActionTypes.UPDATE_VILLAIN_FAIL:
-      return { ...state, isLoading: false, error: action.payload };
     default:
       return state;
   }

@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 import { style } from 'typestyle';
 
 const NavigationBar = () => (
-  <Navbar bg="dark" expand="lg">
+  <Navbar bg="dark" expand="lg" className={'mb-5'}>
     <Nav className="mr-auto">
       <Nav.Link>
         <Link className={navStyle} to={'heroes'}>

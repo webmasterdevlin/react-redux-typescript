@@ -13,7 +13,7 @@ export type HeroModel = {
   lastName: string;
   house: string;
   knownAs: string;
-} & ApiResponse;
+};
 
 /* action types */
 export const HeroActionTypes = {

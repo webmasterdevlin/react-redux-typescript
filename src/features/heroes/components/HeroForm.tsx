@@ -1,33 +1,23 @@
-import React, { useState } from 'react';
+import React from 'react';
 import Button from 'react-bootstrap/Button';
 import { addHero } from '../hero-actions';
 import { useDispatch } from 'react-redux';
-import { HeroModel } from '../hero-types';
 import { Dispatch } from 'redux';
 import { ErrorMessage, Form, Formik } from 'formik';
 import * as yup from 'yup';
 import FormB from 'react-bootstrap/Form';
 import Card from 'react-bootstrap/Card';
+import {
+  formsInitialValue,
+  validationSchema,
+} from '../../../shared/forms-initial-values';
 
 const HeroForm: React.FC = () => {
   const dispatch: Dispatch = useDispatch();
 
-  const validationSchema = yup.object({
-    firstName: yup.string().label('First Name').min(2).required(),
-    lastName: yup.string().label('Last Name').min(2).required(),
-    house: yup.string().required('required'),
-    knownAs: yup.string().required('required'),
-  });
-
   return (
     <Formik
-      initialValues={{
-        id: '',
-        firstName: '',
-        lastName: '',
-        house: '',
-        knownAs: '',
-      }}
+      initialValues={formsInitialValue}
       validationSchema={validationSchema}
       onSubmit={(values, actions) => {
         dispatch(addHero(values));

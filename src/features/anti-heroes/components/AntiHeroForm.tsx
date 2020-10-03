@@ -10,28 +10,17 @@ import FormB from 'react-bootstrap/Form';
 import Card from 'react-bootstrap/Card';
 import { AntiHeroModel } from '../anti-hero.types';
 import { postAntiHeroAction } from '../anti-hero.async.actions';
+import {
+  formsInitialValue,
+  validationSchema,
+} from '../../../shared/forms-initial-values';
 
 const AntiHeroForm: React.FC = () => {
   const dispatch = useDispatch();
 
-  const [newHero, setNewHero] = useState<AntiHeroModel>({
-    id: '',
-    firstName: '',
-    lastName: '',
-    house: '',
-    knownAs: '',
-  });
-
-  const validationSchema = yup.object({
-    firstName: yup.string().label('First Name').min(2).required(),
-    lastName: yup.string().label('Last Name').min(2).required(),
-    house: yup.string().required('required'),
-    knownAs: yup.string().required('required'),
-  });
-
   return (
     <Formik
-      initialValues={newHero}
+      initialValues={formsInitialValue}
       validationSchema={validationSchema}
       onSubmit={(values, actions) => {
         dispatch(postAntiHeroAction(values));

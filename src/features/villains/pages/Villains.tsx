@@ -5,6 +5,7 @@ import { fetchVillains, removeVillain } from '../villain-actions';
 import Button from 'react-bootstrap/Button';
 import VillainForm from '../components/VillainForm';
 import { ApplicationStateType } from '../../../store/reducers';
+import TitleBar from '../../../shared/title-bar';
 
 type Props = {};
 
@@ -20,7 +21,7 @@ const Villains: React.FC<Props> = () => {
 
   return (
     <div>
-      <h1>Super Villains</h1>
+      <TitleBar title={'Super Villains - Redux Thunk'} />
       <VillainForm />
       <ul className={'mt-5 list-group'}>
         {isLoading ? (
@@ -33,13 +34,17 @@ const Villains: React.FC<Props> = () => {
                 'list-group-item col-12 d-flex justify-content-between'
               }
             >
-              <span>{`${v.firstName} ${v.lastName} is ${v.knownAs}`}</span>
-              <Button
-                onClick={() => dispatch(removeVillain(v.id))}
-                variant="danger"
-              >
-                Remove
-              </Button>
+              <div>
+                <span>{`${v.firstName} ${v.lastName} is ${v.knownAs}`}</span>
+              </div>
+              <div>
+                <Button
+                  onClick={() => dispatch(removeVillain(v.id))}
+                  variant="danger"
+                >
+                  DELETE in DB
+                </Button>
+              </div>
             </li>
           ))
         )}

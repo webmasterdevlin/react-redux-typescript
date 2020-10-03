@@ -5,6 +5,7 @@ import Button from 'react-bootstrap/Button';
 import HeroForm from '../components/HeroForm';
 import { ApplicationStateType } from '../../../store/reducers';
 import { Dispatch } from 'redux';
+import TitleBar from '../../../shared/title-bar';
 
 type Props = {};
 
@@ -20,7 +21,7 @@ const Heroes: React.FC<Props> = () => {
 
   return (
     <div>
-      <h1>Super Heroes</h1>
+      <TitleBar title={'Super Heroes - Redux Saga'} />
       <HeroForm />
       <ul className={'mt-5 list-group'}>
         {isLoading ? (
@@ -33,13 +34,17 @@ const Heroes: React.FC<Props> = () => {
                 'list-group-item col-12 d-flex justify-content-between'
               }
             >
-              <span>{`${h.firstName} ${h.lastName} is ${h.knownAs}`}</span>
-              <Button
-                onClick={() => dispatch(removeHero(h.id))}
-                variant="danger"
-              >
-                Remove
-              </Button>
+              <div>
+                <span>{`${h.firstName} ${h.lastName} is ${h.knownAs}`}</span>
+              </div>
+              <div>
+                <Button
+                  onClick={() => dispatch(removeHero(h.id))}
+                  variant="danger"
+                >
+                  DELETE in DB
+                </Button>
+              </div>
             </li>
           ))
         )}

@@ -12,7 +12,7 @@ export async function postAxios<T>(endpoint: string, arg: T) {
   return await api.post<T>(`${endpoint}`, arg);
 }
 
-export async function putAxios<T>(endpoint: string, id: string, arg: T) {
+export async function putAxios<T, AT>(endpoint: string, id: string, arg: AT) {
   return await api.put<T>(`${endpoint}/${id}`, arg);
 }
 

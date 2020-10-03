@@ -52,18 +52,6 @@ export const heroReducer = (
     case HeroActionTypes.ADD_HERO_FAIL:
       return { ...state, isLoading: false, error: action.payload };
 
-    case HeroActionTypes.UPDATE_HERO_REQUEST:
-      return { ...state, isLoading: true };
-    case HeroActionTypes.UPDATE_HERO_SUCCESS:
-      return {
-        ...state,
-        isLoading: false,
-        heroes: state.heroes.map(hero =>
-          hero.id === action.payload.id ? action.payload : hero,
-        ),
-      };
-    case HeroActionTypes.UPDATE_HERO_FAIL:
-      return { ...state, isLoading: false, error: action.payload };
     default:
       return state;
   }
