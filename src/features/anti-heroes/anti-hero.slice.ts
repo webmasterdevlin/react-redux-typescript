@@ -43,16 +43,10 @@ export const antiHeroesSlice = createSlice({
     });
   },
 });
-/* SELECTORS */
+
 export const selectAntiHeroesCount = (state: {
   antiHero: AntiHeroStateType;
 }): number => state.antiHero.antiHeroes.length;
-
-export const selectAntiHeroesList = (state: { antiHero: AntiHeroStateType }) =>
-  state.antiHero.antiHeroes;
-
-export const selectLoading = (state: { antiHero: AntiHeroStateType }) =>
-  state.antiHero.loading;
 
 export const { removeTemporarily } = antiHeroesSlice.actions;
 

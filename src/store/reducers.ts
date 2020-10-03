@@ -3,7 +3,6 @@
  */
 import { combineReducers } from 'redux';
 
-import { InjectedReducersType } from './types/injector-typings';
 import { heroReducer } from '../features/heroes/hero-reducer';
 import { villainReducer } from '../features/villains/villain-reducer';
 
@@ -18,20 +17,25 @@ import antiHeroesReducer from '../features/anti-heroes/anti-hero.slice';
 export type ApplicationStateType = {
   hero: HeroStateType;
   villain: VillainStateType;
+  antiHero: HeroStateType;
 };
 
 /**
  * Merges the main reducer with the router state and dynamically injected reducers
  */
-export function createReducer(
-  /*place all reducers here separated by commas. For example, heroReducer*/
-  injectedReducers: InjectedReducersType = {
-    hero: heroReducer as any,
-    villain: villainReducer as any,
-    antiHero: antiHeroesReducer,
-  },
-) {
-  return combineReducers({
-    ...injectedReducers,
-  });
-}
+
+/*place all reducers here separated by commas. For example, heroReducer*/
+const injectedReducers = {
+  hero: heroReducer,
+  villain: villainReducer,
+
+  antiHero: antiHeroesReducer, // Redux Toolkit way
+};
+
+const rootReducer = combineReducers({
+  ...injectedReducers,
+});
+
+export type RootState = ReturnType<typeof rootReducer>;
+
+export const createReducer = () => rootReducer;

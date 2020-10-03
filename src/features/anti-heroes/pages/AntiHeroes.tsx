@@ -3,18 +3,18 @@ import { useDispatch, useSelector } from 'react-redux';
 import Button from 'react-bootstrap/Button';
 import AntiHeroForm from '../components/AntiHeroForm';
 import { getAntiHeroesAction } from '../anti-hero.actions';
-import {
-  removeTemporarily,
-  selectAntiHeroesList,
-  selectLoading,
-} from '../anti-hero.slice';
+import { removeTemporarily } from '../anti-hero.slice';
+import { RootState } from '../../../store/reducers';
+import { selectAntiHeroList } from '../anti-hero.selectors';
 
 type Props = {};
 
 const AntiHeroes: React.FC<Props> = () => {
   const dispatch = useDispatch();
-  const antiHeroes = useSelector(selectAntiHeroesList);
-  const loading = useSelector(selectLoading);
+
+  const { loading } = useSelector((state: RootState) => state.antiHero);
+  /*or*/
+  const antiHeroes = useSelector(selectAntiHeroList);
 
   useEffect(() => {
     dispatch(getAntiHeroesAction());

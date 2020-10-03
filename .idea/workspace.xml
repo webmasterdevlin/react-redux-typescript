@@ -1,10 +1,46 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:dependabot" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:dependabot" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:npm_and_yarn" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="d96609fc-7c17-4ab9-ab20-5548470e4ce9" name="Default Changelist" comment="">
+    <list default="true" id="d96609fc-7c17-4ab9-ab20-5548470e4ce9" name="Default Changelist" comment="added selector">
+      <change afterPath="$PROJECT_DIR$/src/features/anti-heroes/anti-hero.selectors.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/features/anti-heroes/anti-hero.slice.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/anti-heroes/anti-hero.slice.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/features/anti-heroes/pages/AntiHeroes.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/anti-heroes/pages/AntiHeroes.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/store/reducers.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/reducers.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/types/RootState.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/types/RootState.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/types/RootState.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/types/index.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/types/injector-typings.ts" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -14,8 +50,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="TypeScript File" />
         <option value="TypeScript JSX File" />
+        <option value="TypeScript File" />
       </list>
     </option>
   </component>
@@ -79,7 +115,7 @@
       <updated>1601719051796</updated>
       <workItem from="1601719054043" duration="6760000" />
       <workItem from="1601727640224" duration="1523000" />
-      <workItem from="1601729190522" duration="9215000" />
+      <workItem from="1601729190522" duration="12545000" />
     </task>
     <task id="LOCAL-00001" summary="updated">
       <created>1601719602382</created>
@@ -118,6 +154,17 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
@@ -140,10 +187,10 @@
       <screen x="3840" y="0" width="2560" height="1400" />
     </state>
     <state x="4879" y="348" key="#com.intellij.ide.util.MemberChooser/3840.0.2560.1400/0.0.2560.1400@3840.0.2560.1400" timestamp="1601727790324" />
-    <state x="4416" y="104" key="CommitChangelistDialog2" timestamp="1601737989109">
+    <state x="4416" y="104" key="CommitChangelistDialog2" timestamp="1601741506161">
       <screen x="3840" y="0" width="2560" height="1400" />
     </state>
-    <state x="4416" y="104" key="CommitChangelistDialog2/3840.0.2560.1400/0.0.2560.1400@3840.0.2560.1400" timestamp="1601737989109" />
+    <state x="4416" y="104" key="CommitChangelistDialog2/3840.0.2560.1400/0.0.2560.1400@3840.0.2560.1400" timestamp="1601741506161" />
     <state width="2534" height="368" key="GridCell.Tab.0.bottom" timestamp="1601719129337">
       <screen x="3840" y="0" width="2560" height="1400" />
     </state>
