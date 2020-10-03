@@ -7,21 +7,17 @@ import { style } from 'typestyle';
 const NavigationBar = () => (
   <Navbar bg="dark" expand="lg" className={'mb-5'}>
     <Nav className="mr-auto">
-      <Nav.Link>
-        <Link className={navStyle} to={'heroes'}>
-          Saga
-        </Link>
-      </Nav.Link>
-      <Nav.Link>
-        <Link className={navStyle} to={'villains'}>
-          Thunk
-        </Link>
-      </Nav.Link>
-      <Nav.Link>
-        <Link className={navStyle} to={'anti-heroes'}>
-          Redux Toolkit
-        </Link>
-      </Nav.Link>
+      <Link className={`${navStyle} p-1 m-1`} to={'heroes'}>
+        Saga
+      </Link>
+
+      <Link className={`${navStyle} p-1 m-1`} to={'villains'}>
+        Thunk
+      </Link>
+
+      <Link className={`${navStyle} p-1 m-1`} to={'anti-heroes'}>
+        Redux Toolkit
+      </Link>
     </Nav>
   </Navbar>
 );

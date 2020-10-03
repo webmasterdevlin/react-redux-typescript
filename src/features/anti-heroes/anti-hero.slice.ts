@@ -1,8 +1,4 @@
-import {
-  createEntityAdapter,
-  createSlice,
-  PayloadAction,
-} from '@reduxjs/toolkit';
+import { createSlice, PayloadAction } from '@reduxjs/toolkit';
 import {
   deleteAntiHeroAction,
   getAntiHeroesAction,
@@ -14,8 +10,7 @@ import {
   AntiHeroStateType,
 } from './anti-hero.types';
 
-export const usersAdapter = createEntityAdapter();
-export const initialState = usersAdapter.getInitialState<AntiHeroStateType>({
+export const initialState: AntiHeroStateType = {
   antiHero: {
     firstName: '',
     house: '',
@@ -26,7 +21,7 @@ export const initialState = usersAdapter.getInitialState<AntiHeroStateType>({
   antiHeroes: [],
   error: '',
   loading: false,
-});
+};
 
 export const antiHeroesSlice = createSlice({
   // name is your (feature, module, namespace, context). The terminologies here can be interchangeable.
@@ -63,12 +58,21 @@ export const antiHeroesSlice = createSlice({
     });
 
     /* POST */
+    builder.addCase(postAntiHeroAction.pending, (state, action) => {
+      state.loading = true;
+    });
+
     builder.addCase(postAntiHeroAction.fulfilled, (state, action) => {
       state.antiHeroes.push(action.payload);
       state.loading = false;
     });
 
-    /* DELETE */
+    builder.addCase(postAntiHeroAction.rejected, (state, action: any) => {
+      state.error = action.payload.message;
+      state.loading = false;
+    });
+
+    /* DELETE - Optimistic update */
     builder.addCase(deleteAntiHeroAction.pending, (state, action) => {
       state.tempData = [...state.antiHeroes];
       state.error = '';

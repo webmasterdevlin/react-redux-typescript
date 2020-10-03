@@ -11,10 +11,10 @@ const selectDomain = (state: RootState) => state.antiHero || initialState;
 
 export const selectAThing = createSelector(
   [selectDomain],
-  antiHeroState => antiHeroState.entities,
+  antiHeroState => antiHeroState,
 );
 
 export const selectSomething = createSelector(
   [selectDomain],
-  antiHeroState => antiHeroState.ids.length,
+  antiHeroState => antiHeroState,
 );
