@@ -2,7 +2,12 @@
 
 #### Precomit hook setup
 
-https://dev.to/juliang/configuring-prettier-and-typescript-compiler-as-a-pre-commit-hook-44jh
+- https://dev.to/juliang/configuring-prettier-and-typescript-compiler-as-a-pre-commit-hook-44jh
+  or run this
+
+```sh
+$ npx mrm lint-staged
+```
 
 ### To run the project after cloning
 
