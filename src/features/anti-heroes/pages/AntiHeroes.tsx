@@ -2,14 +2,14 @@ import React, { useEffect, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import Button from 'react-bootstrap/Button';
 import AntiHeroForm from '../components/AntiHeroForm';
+import { RootState } from '../../../store/reducers';
+import TitleBar from '../../../shared/title-bar';
+import UpdateUiLabel from '../../../shared/update-ui-label';
+import { removeAntiHeroByIdTemporaryAction } from '../anti-hero.slice';
 import {
   deleteAntiHeroAction,
   getAntiHeroesAction,
 } from '../anti-hero.async.actions';
-import { removeAntiHeroByIdTemporaryAction } from '../anti-hero.slice';
-import { RootState } from '../../../store/reducers';
-import TitleBar from '../../../shared/title-bar';
-import UpdateUiLabel from '../../../shared/update-ui-label';
 
 type Props = {};
 
@@ -30,8 +30,8 @@ const AntiHeroes: React.FC<Props> = () => {
     <div>
       <TitleBar title={'Anti Heroes - Redux Toolkit'} />
       <AntiHeroForm />
-
-      <ul className={'mt-5 list-group'}>
+      <UpdateUiLabel />
+      <ul className={'list-group'}>
         {loading ? (
           <h2>Loading.. Please wait..</h2>
         ) : (
@@ -69,7 +69,6 @@ const AntiHeroes: React.FC<Props> = () => {
           ))
         )}
       </ul>
-      <UpdateUiLabel />
       {antiHeroes.length === 0 && !loading && (
         <Button
           variant={'info'}

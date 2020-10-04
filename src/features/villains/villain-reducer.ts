@@ -9,7 +9,7 @@ const initialState: VillainStateType = {
     house: '',
     knownAs: '',
   },
-  isLoading: false,
+  loading: false,
   error: '',
 };
 
@@ -24,44 +24,44 @@ export const villainReducer = (
 ): VillainStateType => {
   switch (action.type) {
     case VillainActionTypes.FETCH_VILLAINS_REQUEST:
-      return { ...state, isLoading: true };
+      return { ...state, loading: true };
     case VillainActionTypes.FETCH_VILLAINS_SUCCESS:
-      return { ...state, isLoading: false, villains: action.payload };
+      return { ...state, loading: false, villains: action.payload };
     case VillainActionTypes.FETCH_VILLAINS_FAIL:
-      return { ...state, isLoading: false, error: action.payload };
+      return { ...state, loading: false, error: action.payload };
 
     case VillainActionTypes.REMOVE_VILLAIN_TEMPORARY:
       return {
         ...state,
-        isLoading: false,
+        loading: false,
         villains: state.villains.filter(
           villain => villain.id !== action.payload,
         ),
       };
 
     case VillainActionTypes.REMOVE_VILLAIN_REQUEST:
-      return { ...state, isLoading: true };
+      return { ...state, loading: true };
     case VillainActionTypes.REMOVE_VILLAIN_SUCCESS:
       return {
         ...state,
-        isLoading: false,
+        loading: false,
         villains: state.villains.filter(
           villain => villain.id !== action.payload,
         ),
       };
     case VillainActionTypes.REMOVE_VILLAIN_FAIL:
-      return { ...state, isLoading: false, error: action.payload };
+      return { ...state, loading: false, error: action.payload };
 
     case VillainActionTypes.ADD_VILLAIN_REQUEST:
-      return { ...state, isLoading: true };
+      return { ...state, loading: true };
     case VillainActionTypes.ADD_VILLAIN_SUCCESS:
       return {
         ...state,
-        isLoading: false,
+        loading: false,
         villains: [...state.villains, action.payload],
       };
     case VillainActionTypes.ADD_VILLAIN_FAIL:
-      return { ...state, isLoading: false, error: action.payload };
+      return { ...state, loading: false, error: action.payload };
 
     default:
       return state;

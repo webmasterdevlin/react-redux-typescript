@@ -1,7 +1,7 @@
 export type VillainStateType = {
   readonly villains: VillainModel[];
   readonly villain: VillainModel;
-  readonly isLoading: boolean;
+  readonly loading: boolean;
   readonly error: string;
 };
 

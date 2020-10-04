@@ -26,8 +26,10 @@ export const initialState: AntiHeroStateType = {
 export const antiHeroesSlice = createSlice({
   // name is your (feature, module, namespace, context). The terminologies here can be interchangeable.
   name: antiHeroNamespace,
+
   // initialState is the default value
   initialState,
+
   // mutate using non-asynchronous actions
   reducers: {
     removeAntiHeroByIdTemporaryAction: (
@@ -87,6 +89,7 @@ export const antiHeroesSlice = createSlice({
   },
 });
 
+/* non-async actions */
 export const { removeAntiHeroByIdTemporaryAction } = antiHeroesSlice.actions;
 
 export default antiHeroesSlice.reducer;

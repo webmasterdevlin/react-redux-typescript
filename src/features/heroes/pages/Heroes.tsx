@@ -1,22 +1,22 @@
 import React, { useEffect, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import {
-  getHeroesAction,
-  deleteHeroByIdAction,
-  removeHeroByIdTemporaryAction,
-} from '../hero-actions';
 import Button from 'react-bootstrap/Button';
 import HeroForm from '../components/HeroForm';
 import { ApplicationStateType } from '../../../store/reducers';
 import { Dispatch } from 'redux';
 import TitleBar from '../../../shared/title-bar';
 import UpdateUiLabel from '../../../shared/update-ui-label';
+import {
+  getHeroesAction,
+  deleteHeroByIdAction,
+  removeHeroByIdTemporaryAction,
+} from '../hero-actions';
 
 type Props = {};
 
 const Heroes: React.FC<Props> = () => {
   const dispatch: Dispatch = useDispatch();
-  const { heroes, isLoading } = useSelector(
+  const { heroes, loading } = useSelector(
     (state: ApplicationStateType) => state.hero,
   );
   const [counter, setCounter] = useState('0');
@@ -29,8 +29,9 @@ const Heroes: React.FC<Props> = () => {
     <div>
       <TitleBar title={'Super Heroes - Redux Saga'} />
       <HeroForm />
-      <ul className={'mt-5 list-group'}>
-        {isLoading ? (
+      <UpdateUiLabel />
+      <ul className={'list-group'}>
+        {loading ? (
           <h2>Loading.. Please wait..</h2>
         ) : (
           heroes.map(h => (
@@ -65,8 +66,7 @@ const Heroes: React.FC<Props> = () => {
           ))
         )}
       </ul>
-      <UpdateUiLabel />
-      {heroes.length === 0 && !isLoading && (
+      {heroes.length === 0 && !loading && (
         <Button variant={'info'} onClick={() => dispatch(getHeroesAction())}>
           Re-fetch
         </Button>

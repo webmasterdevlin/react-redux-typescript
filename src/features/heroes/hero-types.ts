@@ -1,7 +1,7 @@
 export type HeroStateType = {
   readonly heroes: HeroModel[];
   readonly hero: HeroModel;
-  readonly isLoading: boolean;
+  readonly loading: boolean;
   readonly error: string;
 };
 

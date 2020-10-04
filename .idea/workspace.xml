@@ -33,8 +33,27 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d96609fc-7c17-4ab9-ab20-5548470e4ce9" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/shared/shared-form.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/shared/shared-input.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Router.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Router.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/features/anti-heroes/anti-hero.async.actions.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/anti-heroes/anti-hero.async.actions.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/features/anti-heroes/anti-hero.slice.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/anti-heroes/anti-hero.slice.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/features/anti-heroes/components/AntiHeroForm.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/anti-heroes/components/AntiHeroForm.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/features/anti-heroes/pages/AntiHeroes.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/anti-heroes/pages/AntiHeroes.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/features/anti-heroes/pages/EditAntiHero.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/features/heroes/components/HeroForm.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/heroes/components/HeroForm.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/features/heroes/hero-reducer.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/heroes/hero-reducer.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/features/heroes/hero-types.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/heroes/hero-types.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/features/heroes/pages/EditHero.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/features/heroes/pages/Heroes.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/heroes/pages/Heroes.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/features/villains/components/VillainForm.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/villains/components/VillainForm.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/features/villains/pages/EditVillain.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/features/villains/pages/Villains.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/villains/pages/Villains.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/features/villains/villain-reducer.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/villains/villain-reducer.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/features/villains/villain-types.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/villains/villain-types.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/shared/navigation-bar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/shared/navigation-bar.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/shared/update-ui-label.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/shared/update-ui-label.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -113,7 +132,8 @@
       <updated>1601719051796</updated>
       <workItem from="1601719054043" duration="6760000" />
       <workItem from="1601727640224" duration="1523000" />
-      <workItem from="1601729190522" duration="33520000" />
+      <workItem from="1601729190522" duration="33930000" />
+      <workItem from="1601793052671" duration="2990000" />
     </task>
     <task id="LOCAL-00001" summary="updated">
       <created>1601719602382</created>
@@ -185,7 +205,14 @@
       <option name="project" value="LOCAL" />
       <updated>1601767742040</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="updated">
+      <created>1601767836022</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1601767836022</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TerminalProjectNonSharedOptionsProvider">
@@ -204,6 +231,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
@@ -227,10 +255,10 @@
       <screen x="3840" y="0" width="2560" height="1400" />
     </state>
     <state x="4879" y="348" key="#com.intellij.ide.util.MemberChooser/3840.0.2560.1400/0.0.2560.1400@3840.0.2560.1400" timestamp="1601727790324" />
-    <state x="4416" y="104" width="1715" height="1193" key="CommitChangelistDialog2" timestamp="1601767731694">
+    <state x="4416" y="104" width="1715" height="1193" key="CommitChangelistDialog2" timestamp="1601767828786">
       <screen x="3840" y="0" width="2560" height="1400" />
     </state>
-    <state x="4416" y="104" width="1715" height="1193" key="CommitChangelistDialog2/3840.0.2560.1400/0.0.2560.1400@3840.0.2560.1400" timestamp="1601767731694" />
+    <state x="4416" y="104" width="1715" height="1193" key="CommitChangelistDialog2/3840.0.2560.1400/0.0.2560.1400@3840.0.2560.1400" timestamp="1601767828786" />
     <state width="2534" height="368" key="GridCell.Tab.0.bottom" timestamp="1601719129337">
       <screen x="3840" y="0" width="2560" height="1400" />
     </state>
@@ -255,10 +283,10 @@
       <screen x="3840" y="0" width="2560" height="1400" />
     </state>
     <state x="4520" y="259" key="SettingsEditor/3840.0.2560.1400/0.0.2560.1400@3840.0.2560.1400" timestamp="1601750258995" />
-    <state x="4613" y="364" key="Vcs.Push.Dialog.v2" timestamp="1601767746278">
+    <state x="4613" y="364" key="Vcs.Push.Dialog.v2" timestamp="1601767838198">
       <screen x="3840" y="0" width="2560" height="1400" />
     </state>
-    <state x="4613" y="364" key="Vcs.Push.Dialog.v2/3840.0.2560.1400/0.0.2560.1400@3840.0.2560.1400" timestamp="1601767746278" />
+    <state x="4613" y="364" key="Vcs.Push.Dialog.v2/3840.0.2560.1400/0.0.2560.1400@3840.0.2560.1400" timestamp="1601767838198" />
     <state x="4761" y="355" width="718" height="690" key="find.popup" timestamp="1601764829945">
       <screen x="3840" y="0" width="2560" height="1400" />
     </state>

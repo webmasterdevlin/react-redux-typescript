@@ -9,7 +9,7 @@ const initialState: HeroStateType = {
     house: '',
     knownAs: '',
   },
-  isLoading: false,
+  loading: false,
   error: '',
 };
 
@@ -24,11 +24,11 @@ export const heroReducer = (
 ): HeroStateType => {
   switch (action.type) {
     case HeroActionTypes.FETCH_HEROES_REQUEST:
-      return { ...state, isLoading: true };
+      return { ...state, loading: true };
     case HeroActionTypes.FETCH_HEROES_SUCCESS:
-      return { ...state, isLoading: false, heroes: action.payload };
+      return { ...state, loading: false, heroes: action.payload };
     case HeroActionTypes.FETCH_HEROES_FAIL:
-      return { ...state, isLoading: false, error: action.payload };
+      return { ...state, loading: false, error: action.payload };
 
     case HeroActionTypes.REMOVE_HERO_TEMPORARY:
       return {
@@ -37,26 +37,26 @@ export const heroReducer = (
       };
 
     case HeroActionTypes.REMOVE_HERO_REQUEST:
-      return { ...state, isLoading: true };
+      return { ...state, loading: true };
     case HeroActionTypes.REMOVE_HERO_SUCCESS:
       return {
         ...state,
-        isLoading: false,
+        loading: false,
         heroes: state.heroes.filter(hero => hero.id !== action.payload),
       };
     case HeroActionTypes.REMOVE_HERO_FAIL:
-      return { ...state, isLoading: false, error: action.payload };
+      return { ...state, loading: false, error: action.payload };
 
     case HeroActionTypes.ADD_HERO_REQUEST:
-      return { ...state, isLoading: true };
+      return { ...state, loading: true };
     case HeroActionTypes.ADD_HERO_SUCCESS:
       return {
         ...state,
-        isLoading: false,
+        loading: false,
         heroes: [...state.heroes, action.payload],
       };
     case HeroActionTypes.ADD_HERO_FAIL:
-      return { ...state, isLoading: false, error: action.payload };
+      return { ...state, loading: false, error: action.payload };
 
     default:
       return state;

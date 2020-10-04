@@ -10,14 +10,13 @@ import Button from 'react-bootstrap/Button';
 import VillainForm from '../components/VillainForm';
 import { ApplicationStateType } from '../../../store/reducers';
 import TitleBar from '../../../shared/title-bar';
-import { getAntiHeroesAction } from '../../anti-heroes/anti-hero.async.actions';
 import UpdateUiLabel from '../../../shared/update-ui-label';
 
 type Props = {};
 
 const Villains: React.FC<Props> = () => {
   const dispatch: Dispatch = useDispatch();
-  const { villains, isLoading } = useSelector(
+  const { villains, loading } = useSelector(
     (state: ApplicationStateType) => state.villain,
   );
   const [counter, setCounter] = useState('0');
@@ -30,8 +29,9 @@ const Villains: React.FC<Props> = () => {
     <div>
       <TitleBar title={'Super Villains - Redux Thunk'} />
       <VillainForm />
-      <ul className={'mt-5 list-group'}>
-        {isLoading ? (
+      <UpdateUiLabel />
+      <ul className={'list-group'}>
+        {loading ? (
           <h2>Loading.. Please wait..</h2>
         ) : (
           villains.map(v => (
@@ -66,8 +66,7 @@ const Villains: React.FC<Props> = () => {
           ))
         )}
       </ul>
-      <UpdateUiLabel />
-      {villains.length === 0 && !isLoading && (
+      {villains.length === 0 && !loading && (
         <Button variant={'info'} onClick={() => dispatch(getVillainsAction())}>
           Re-fetch
         </Button>
