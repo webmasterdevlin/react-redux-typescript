@@ -50,12 +50,12 @@ export const antiHeroesSlice = createSlice({
     });
 
     builder.addCase(getAntiHeroesAction.fulfilled, (state, action) => {
-      state.antiHeroes = action.payload;
+      state.antiHeroes = action?.payload;
       state.loading = false;
     });
 
     builder.addCase(getAntiHeroesAction.rejected, (state, action: any) => {
-      state.error = action.payload.message;
+      state.error = action?.payload?.message;
       state.loading = false;
     });
 
@@ -65,12 +65,12 @@ export const antiHeroesSlice = createSlice({
     });
 
     builder.addCase(postAntiHeroAction.fulfilled, (state, action) => {
-      state.antiHeroes.push(action.payload);
+      state.antiHeroes.push(action?.payload);
       state.loading = false;
     });
 
     builder.addCase(postAntiHeroAction.rejected, (state, action: any) => {
-      state.error = action.payload.message;
+      state.error = action?.payload?.message;
       state.loading = false;
     });
 
@@ -83,7 +83,7 @@ export const antiHeroesSlice = createSlice({
     });
 
     builder.addCase(deleteAntiHeroAction.rejected, (state, action: any) => {
-      state.error = action.error.message;
+      state.error = action?.error?.message;
       state.antiHeroes = state.tempData as AntiHeroModel[];
     });
   },
