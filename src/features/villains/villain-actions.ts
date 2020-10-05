@@ -12,7 +12,7 @@ type ActionType = {
 } & Action;
 
 /*non-async action creators*/
-export const removeVillainTemporaryAction = (id: string): ActionType => {
+export const removeVillainByIdTemporaryAction = (id: string): ActionType => {
   return {
     type: VillainActionTypes.REMOVE_VILLAIN_TEMPORARY,
     payload: id,

@@ -34,10 +34,8 @@
   <component name="ChangeListManager">
     <list default="true" id="d96609fc-7c17-4ab9-ab20-5548470e4ce9" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Router.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Routes.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/shared/navigation-bar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/shared/navigation-bar.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/features/villains/pages/Villains.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/villains/pages/Villains.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/features/villains/villain-actions.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/villains/villain-actions.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -118,7 +116,8 @@
       <workItem from="1601727640224" duration="1523000" />
       <workItem from="1601729190522" duration="33930000" />
       <workItem from="1601793052671" duration="3420000" />
-      <workItem from="1601876729451" duration="2182000" />
+      <workItem from="1601876729451" duration="2319000" />
+      <workItem from="1601911344981" duration="492000" />
     </task>
     <task id="LOCAL-00001" summary="updated">
       <created>1601719602382</created>
@@ -204,7 +203,14 @@
       <option name="project" value="LOCAL" />
       <updated>1601796362380</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="moved to lazy routes">
+      <created>1601878967070</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1601878967070</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TerminalProjectNonSharedOptionsProvider">
@@ -232,7 +238,8 @@
     <MESSAGE value="added anti-hero reducer" />
     <MESSAGE value="added selector" />
     <MESSAGE value="updated" />
-    <option name="LAST_COMMIT_MESSAGE" value="updated" />
+    <MESSAGE value="moved to lazy routes" />
+    <option name="LAST_COMMIT_MESSAGE" value="moved to lazy routes" />
   </component>
   <component name="WindowStateProjectService">
     <state x="4815" y="478" key="#Notifications" timestamp="1601738689874">
@@ -247,10 +254,10 @@
       <screen x="3840" y="0" width="2560" height="1400" />
     </state>
     <state x="4879" y="348" key="#com.intellij.ide.util.MemberChooser/3840.0.2560.1400/0.0.2560.1400@3840.0.2560.1400" timestamp="1601727790324" />
-    <state x="4416" y="104" width="1715" height="1193" key="CommitChangelistDialog2" timestamp="1601796352143">
+    <state x="4416" y="104" width="1715" height="1193" key="CommitChangelistDialog2" timestamp="1601878958994">
       <screen x="3840" y="0" width="2560" height="1400" />
     </state>
-    <state x="4416" y="104" width="1715" height="1193" key="CommitChangelistDialog2/3840.0.2560.1400/0.0.2560.1400@3840.0.2560.1400" timestamp="1601796352143" />
+    <state x="4416" y="104" width="1715" height="1193" key="CommitChangelistDialog2/3840.0.2560.1400/0.0.2560.1400@3840.0.2560.1400" timestamp="1601878958994" />
     <state width="2534" height="368" key="GridCell.Tab.0.bottom" timestamp="1601719129337">
       <screen x="3840" y="0" width="2560" height="1400" />
     </state>
@@ -275,10 +282,10 @@
       <screen x="3840" y="0" width="2560" height="1400" />
     </state>
     <state x="4520" y="259" key="SettingsEditor/3840.0.2560.1400/0.0.2560.1400@3840.0.2560.1400" timestamp="1601750258995" />
-    <state x="4613" y="364" key="Vcs.Push.Dialog.v2" timestamp="1601796371923">
+    <state x="4613" y="364" key="Vcs.Push.Dialog.v2" timestamp="1601878970417">
       <screen x="3840" y="0" width="2560" height="1400" />
     </state>
-    <state x="4613" y="364" key="Vcs.Push.Dialog.v2/3840.0.2560.1400/0.0.2560.1400@3840.0.2560.1400" timestamp="1601796371923" />
+    <state x="4613" y="364" key="Vcs.Push.Dialog.v2/3840.0.2560.1400/0.0.2560.1400@3840.0.2560.1400" timestamp="1601878970417" />
     <state x="4761" y="355" width="718" height="690" key="find.popup" timestamp="1601764829945">
       <screen x="3840" y="0" width="2560" height="1400" />
     </state>

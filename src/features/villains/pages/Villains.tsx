@@ -4,7 +4,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import {
   getVillainsAction,
   deleteVillainByIdAction,
-  removeVillainTemporaryAction,
+  removeVillainByIdTemporaryAction,
 } from '../villain-actions';
 import Button from 'react-bootstrap/Button';
 import VillainForm from '../components/VillainForm';
@@ -50,7 +50,9 @@ const Villains: React.FC<Props> = () => {
                   Mark
                 </Button>{' '}
                 <Button
-                  onClick={() => dispatch(removeVillainTemporaryAction(v.id))}
+                  onClick={() =>
+                    dispatch(removeVillainByIdTemporaryAction(v.id))
+                  }
                   variant="outline-danger"
                 >
                   Remove
