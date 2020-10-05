@@ -34,7 +34,7 @@
   <component name="ChangeListManager">
     <list default="true" id="d96609fc-7c17-4ab9-ab20-5548470e4ce9" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/features/anti-heroes/anti-hero.slice.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/anti-heroes/anti-hero.slice.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Routes.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Routes.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -117,7 +117,7 @@
       <workItem from="1601793052671" duration="3420000" />
       <workItem from="1601876729451" duration="2319000" />
       <workItem from="1601911344981" duration="661000" />
-      <workItem from="1601939136897" duration="164000" />
+      <workItem from="1601939136897" duration="445000" />
     </task>
     <task id="LOCAL-00001" summary="updated">
       <created>1601719602382</created>
@@ -217,7 +217,14 @@
       <option name="project" value="LOCAL" />
       <updated>1601911879323</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="moved to lazy routes">
+      <created>1601939351276</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1601939351276</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TerminalProjectNonSharedOptionsProvider">
@@ -261,10 +268,10 @@
       <screen x="3840" y="0" width="2560" height="1400" />
     </state>
     <state x="4879" y="348" key="#com.intellij.ide.util.MemberChooser/3840.0.2560.1400/0.0.2560.1400@3840.0.2560.1400" timestamp="1601727790324" />
-    <state x="4416" y="104" width="1715" height="1193" key="CommitChangelistDialog2" timestamp="1601911871608">
+    <state x="4416" y="104" width="1715" height="1193" key="CommitChangelistDialog2" timestamp="1601939343141">
       <screen x="3840" y="0" width="2560" height="1400" />
     </state>
-    <state x="4416" y="104" width="1715" height="1193" key="CommitChangelistDialog2/3840.0.2560.1400/0.0.2560.1400@3840.0.2560.1400" timestamp="1601911871608" />
+    <state x="4416" y="104" width="1715" height="1193" key="CommitChangelistDialog2/3840.0.2560.1400/0.0.2560.1400@3840.0.2560.1400" timestamp="1601939343141" />
     <state width="2534" height="368" key="GridCell.Tab.0.bottom" timestamp="1601719129337">
       <screen x="3840" y="0" width="2560" height="1400" />
     </state>
@@ -289,10 +296,10 @@
       <screen x="3840" y="0" width="2560" height="1400" />
     </state>
     <state x="4520" y="259" key="SettingsEditor/3840.0.2560.1400/0.0.2560.1400@3840.0.2560.1400" timestamp="1601750258995" />
-    <state x="4613" y="364" key="Vcs.Push.Dialog.v2" timestamp="1601911882143">
+    <state x="4613" y="364" key="Vcs.Push.Dialog.v2" timestamp="1601939354467">
       <screen x="3840" y="0" width="2560" height="1400" />
     </state>
-    <state x="4613" y="364" key="Vcs.Push.Dialog.v2/3840.0.2560.1400/0.0.2560.1400@3840.0.2560.1400" timestamp="1601911882143" />
+    <state x="4613" y="364" key="Vcs.Push.Dialog.v2/3840.0.2560.1400/0.0.2560.1400@3840.0.2560.1400" timestamp="1601939354467" />
     <state x="4761" y="355" width="718" height="690" key="find.popup" timestamp="1601764829945">
       <screen x="3840" y="0" width="2560" height="1400" />
     </state>
