@@ -1,24 +1,24 @@
-import React from 'react';
-import { BrowserRouter, Link } from 'react-router-dom';
-import Router from './Router';
+import React, { FC } from 'react';
+import { BrowserRouter, Router } from 'react-router-dom';
+import { createBrowserHistory } from 'history';
 import { Provider } from 'react-redux';
-import { style } from 'typestyle';
 import { configureAppStore } from './store/configureStore';
 import NavigationBar from './shared/navigation-bar';
+import routes, { renderRoutes } from './Routes';
 
-const App: React.FC = () => {
+const history = createBrowserHistory();
+
+const App: FC = () => {
   const store = configureAppStore();
 
   return (
     <Provider store={store}>
-      <BrowserRouter>
+      <Router history={history}>
         <>
           <NavigationBar />
-          <div className={'container'}>
-            <Router />
-          </div>
+          <div className={'container'}>{renderRoutes(routes)}</div>
         </>
-      </BrowserRouter>
+      </Router>
     </Provider>
   );
 };
